@@ -1,0 +1,29 @@
+#include <array>
+#include <cassert>
+#include <iostream>
+#include <fstream>
+#include <vector>
+
+#include "types.hpp"
+#include "opcodes.hpp"
+#include "vm.cpp"
+
+using namespace std;
+using namespace paiv;
+
+int main(int argc, char* argv[])
+{
+  if (argc < 2)
+  {
+    cout << "usage: synacor <image>" << endl;
+    return 0;
+  }
+
+  ImageLoader loader;
+  auto image = loader.read(argv[1]);
+
+  SynacorVM vm;
+  vm.exec(image);
+
+  return 0;
+}
