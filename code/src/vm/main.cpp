@@ -1,5 +1,4 @@
 #include <array>
-#include <cassert>
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -15,7 +14,7 @@ int main(int argc, char* argv[])
 {
   if (argc < 2)
   {
-    cout << "usage: synacor <image>" << endl;
+    cout << "usage: vm <image>" << endl;
     return 0;
   }
 

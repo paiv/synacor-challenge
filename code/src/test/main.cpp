@@ -4,9 +4,9 @@
 #include <fstream>
 #include <vector>
 
-#include "../main/types.hpp"
-#include "../main/opcodes.hpp"
-#include "../main/vm.cpp"
+#include "../vm/types.hpp"
+#include "../vm/opcodes.hpp"
+#include "../vm/vm.cpp"
 
 using namespace std;
 using namespace paiv;
