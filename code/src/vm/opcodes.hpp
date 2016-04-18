@@ -92,6 +92,8 @@ namespace paiv {
     //
     NOOP = 21,
 
+    DATA = 0xFFFF,
+
   } Op;
 
 }
