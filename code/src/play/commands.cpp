@@ -130,8 +130,6 @@ namespace paiv {
   u8
   CommandHandler::resetWorker(const string& fn)
   {
-    clog << "resetting from " << (fn.size() > 0 ? fn : "base image") << endl;
-
     if (worker)
     {
       vm->halt();
