@@ -53,13 +53,16 @@ int main(int argc, char* argv[])
 
     while (true)
     {
-      usleep(50000);
+      usleep(42000);
       char* line = readline("> ");
       if (!line)
         break;
       add_history(line);
 
-      if (!dispatcher.process(Command(line)))
+      Command command(line);
+      free(line);
+
+      if (!dispatcher.process(command))
         break;
     }
 

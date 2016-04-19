@@ -142,7 +142,8 @@ namespace paiv {
       pthread_join(worker, nullptr);
 
       worker = 0;
-      fseek(stdin, 0, SEEK_END);
+      int c;
+      while ((c = getchar()) != '\n' && c != EOF) ;
     }
 
     if (!vm)
@@ -220,7 +221,10 @@ namespace paiv {
       if (command.args.size() > 0)
       {
         string fn = command.args[0];
-        resetWorker(fn);
+        if (resetWorker(fn))
+        {
+          dprintf(pty, "look\n");
+        }
       }
     }
     else
