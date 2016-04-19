@@ -1,4 +1,5 @@
 #include <array>
+#include <iomanip>
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -9,6 +10,7 @@
 #include <fcntl.h>
 #include <zmq.hpp>
 #include <signal.h>
+#include <sys/stat.h>
 
 #include "../vm/types.hpp"
 #include "../vm/opcodes.hpp"
@@ -21,22 +23,15 @@ using namespace paiv;
 #include "challenge.cpp"
 
 
-static void*
-startvm(void* arg)
-{
-  ImageLoader loader;
-  auto image = loader.read(challenge_bin);
-
-  SynacorVM* vm = (SynacorVM*)arg;
-  vm->load(image);
-
-  return nullptr;
-}
-
-
 int main(int argc, char* argv[])
 {
-// read: pseudo-terminal http://rachid.koucha.free.fr/tech_corner/pty_pdip.html
+  // parent process -> zmq -> child process [command handler]
+  // child [command handler] -> vm worker thread
+
+  // stdin -> parent process
+  // parent -> pty -> child [stdin]
+  // stdout <- parent
+  // stdout <- child
 
   int fdparent = posix_openpt(O_RDWR);
   grantpt(fdparent);
@@ -46,12 +41,11 @@ int main(int argc, char* argv[])
 
   int fd = fork();
 
-
   if (fd != 0)
   {
     close(fdchild);
 
-    zmq::context_t context(1);
+    zmq::context_t context;
     zmq::socket_t socket(context, ZMQ_REQ);
     socket.connect("tcp://127.0.0.1:7199");
 
@@ -61,45 +55,40 @@ int main(int argc, char* argv[])
     {
       usleep(50000);
       char* line = readline("> ");
+      if (!line)
+        break;
       add_history(line);
 
       if (!dispatcher.process(Command(line)))
-      {
-        int state;
-        if (!waitpid(fd, &state, WNOHANG))
-          kill(fd, SIGQUIT);
         break;
-      }
     }
+
+    int state;
+    if (!waitpid(fd, &state, WNOHANG))
+      kill(fd, SIGQUIT);
   }
   else
   {
-    close(fdparent);
     close(STDIN_FILENO);
     dup2(fdchild, STDIN_FILENO);
     close(fdchild);
 
-    zmq::context_t context(1);
+    zmq::context_t context;
     zmq::socket_t socket(context, ZMQ_REP);
     socket.bind("tcp://*:7199");
 
-    SynacorVM vm;
+    vector<u8> image(begin(challenge_bin), end(challenge_bin));
 
-    pthread_t worker;
-    pthread_create(&worker, nullptr, startvm, &vm);
-
-    CommandHandler handler(&vm);
+    CommandHandler handler(&socket, fdparent, image);
 
     while (true)
     {
-      zmq::message_t request;
-      socket.recv(&request);
-
-      string line((const char*)request.data(), request.size());
-      if (!handler.process(Command(line)))
+      if (!handler.process())
         break;
     }
+
   }
 
+  cout << endl;
   return 0;
 }

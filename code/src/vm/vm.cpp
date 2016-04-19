@@ -26,10 +26,40 @@ namespace paiv {
     {
       return vector<u16>((u16*)&raw[0], (u16*)&raw[N/2*2]);
     }
+
+    inline vector<u16>
+    read(const vector<u8>& raw) const
+    {
+      auto N = raw.size();
+      return vector<u16>((u16*)&raw[0], (u16*)&raw[N/2*2]);
+    }
   };
 
 
-  class SynacorVM
+  class SynacorVM;
+
+  class Snapshot
+  {
+  public:
+
+    void take(const SynacorVM* vm);
+    void restore(SynacorVM* vm) const;
+
+    u8 save(const string& fn);
+    u8 load(const string& fn);
+    u8 loadImage(const vector<u16>& image);
+
+    string fn;
+
+    array<u16, 16*32768> mem;
+    array<u16, 8> reg;
+    array<u16, 1024*1024> stack;
+    u16 ip;
+    u16 sp;
+  };
+
+
+  class SynacorVM : public enable_shared_from_this<SynacorVM>
   {
   protected:
     typedef vector<u16> Image;
@@ -40,28 +70,33 @@ namespace paiv {
     u16 ip;
     u16 sp;
 
+    friend class Snapshot;
+
   public:
-    SynacorVM();
+    SynacorVM() : ip(0), sp(0), stopped(false) {
+      mem.fill(0);
+      reg.fill(0);
+      stack.fill(0);
+    }
 
     template<size_t N>
     void exec(u16 (&image)[N]);
-
     void exec(Image& image);
 
     void load(Image& image);
     void run();
+    void halt() { stopped = true; }
+
+    Snapshot save();
+    void load(const Snapshot& snapshot);
 
   private:
     u8 dispatch(u16 opcode, u16 a, u16 b, u16 c);
     u16 xnum(u16 x);
     u16& regr(u16 x);
-    void dump(string fn);
+    u8 stopped;
   };
 
-  SynacorVM::SynacorVM()
-    : ip(0), sp(0)
-  {
-  }
 
   template<size_t N>
   void
@@ -75,28 +110,16 @@ namespace paiv {
   SynacorVM::exec(Image& image)
   {
     load(image);
-    // dump("loaded");
     run();
-  }
-
-  void
-  SynacorVM::load(Image& image)
-  {
-    copy(begin(image), end(image), begin(mem));
-    ip = 0;
-    sp = 0;
   }
 
   void
   SynacorVM::run()
   {
-    for (u8 running = true; running; )
+    while (!stopped)
     {
-      running = dispatch(
-        mem[ip],
-        mem[ip + 1],
-        mem[ip + 2],
-        mem[ip + 3]);
+      if (!dispatch(mem[ip], mem[ip + 1], mem[ip + 2], mem[ip + 3]))
+        stopped = true;
     }
   }
 
@@ -115,8 +138,6 @@ namespace paiv {
   u8
   SynacorVM::dispatch(u16 opcode, u16 a, u16 b, u16 c)
   {
-    // clog << ip << ": " << opcode << ' ' << a << ' ' << b << endl;
-
     switch (opcode)
     {
       case Op::HALT:
@@ -216,7 +237,6 @@ namespace paiv {
         break;
 
       case Op::IN:
-        // dump("oninput");
         regr(a) = getchar();
         ip += 2;
         break;
@@ -234,11 +254,147 @@ namespace paiv {
     return true;
   }
 
-  void
-  SynacorVM::dump(string fn)
+
+  Snapshot
+  SynacorVM::save()
   {
-    ofstream ofs(string("dumps/") + fn);
-    ofs.write((char*)&mem[0], mem.size() * 2);
+    Snapshot snapshot;
+    snapshot.take(this);
+    return snapshot;
+  }
+
+  void
+  SynacorVM::load(const Snapshot& snapshot)
+  {
+    snapshot.restore(this);
+  }
+
+  void
+  SynacorVM::load(Image& image)
+  {
+    Snapshot snapshot;
+    snapshot.loadImage(image);
+    load(snapshot);
+  }
+
+
+  void
+  Snapshot::take(const SynacorVM* vm)
+  {
+    ip = vm->ip;
+    sp = vm->sp;
+    mem = vm->mem;
+    reg = vm->reg;
+    stack = vm->stack;
+  }
+
+  void
+  Snapshot::restore(SynacorVM* vm) const
+  {
+    vm->ip = ip;
+    vm->sp = sp;
+    vm->mem = mem;
+    vm->reg = reg;
+    vm->stack = stack;
+  }
+
+  typedef union
+  {
+    char chars[8];
+    u64 word;
+  } Signature;
+
+  static const Signature SIGNv1 = { "SYNACOR" };
+
+  u8
+  Snapshot::save(const string& fn)
+  {
+    auto it = find_if(mem.rbegin(), mem.rend(), [](u16 x){ return x != 0; });
+    u16 memUsed = distance(it, mem.rend());
+
+    ofstream ofs(fn, ios::binary | ios::trunc);
+    if (!ofs.good())
+      return false;
+
+    ofs.write(SIGNv1.chars, sizeof(SIGNv1));
+    ofs.write((char*)&reg[0], reg.size() * 2);
+    ofs.write((char*)&ip, 2);
+    ofs.write((char*)&sp, 2);
+    ofs.write((char*)&stack[0], sp * 2);
+    ofs.write((char*)&memUsed, 2);
+    ofs.write((char*)&mem[0], memUsed * 2);
+
+    return true;
+  }
+
+  u8
+  Snapshot::load(const string& fn)
+  {
+    ifstream ifs(fn, ios::binary | ios::ate);
+    if (!ifs.good())
+      return false;
+
+    auto size = ifs.tellg();
+    ifs.seekg(0, ios::beg);
+
+    size_t runlen = sizeof(Signature);
+    if (size > runlen)
+    {
+      Signature sign;
+      ifs.read(&sign.chars[0], sizeof(Signature));
+      if (sign.word != SIGNv1.word) return false;
+    }
+
+    runlen += reg.size() * 2;
+    if (size > runlen )
+    {
+      ifs.read((char*)&reg[0], reg.size() * 2);
+    }
+
+    runlen += 4;
+    if (size > runlen)
+    {
+      ifs.read((char*)&ip, 2);
+      ifs.read((char*)&sp, 2);
+    }
+
+    runlen += sp * 2;
+    if (size > runlen )
+    {
+      stack.fill(0);
+      ifs.read((char*)&stack[0], sp * 2);
+    }
+
+    u16 memUsed;
+    runlen += 2;
+    if (size > runlen)
+    {
+      ifs.read((char*)&memUsed, 2);
+    }
+
+    runlen += memUsed * 2;
+    if (size >= runlen )
+    {
+      mem.fill(0);
+      ifs.read((char*)&mem[0], memUsed * 2);
+
+      this->fn = fn;
+      return true;
+    }
+
+    return false;
+  }
+
+  u8
+  Snapshot::loadImage(const vector<u16>& image)
+  {
+    ip = 0;
+    sp = 0;
+    reg.fill(0);
+    mem.fill(0);
+    stack.fill(0);
+    copy(begin(image), end(image), begin(mem));
+    return true;
   }
 
 }

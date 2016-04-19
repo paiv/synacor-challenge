@@ -1,10 +1,9 @@
 #include <array>
+#include <iomanip>
 #include <iostream>
 #include <fstream>
-#include <vector>
-#include <string>
-#include <iomanip>
 #include <sstream>
+#include <vector>
 
 #include "../vm/types.hpp"
 #include "../vm/opcodes.hpp"

@@ -1,8 +1,23 @@
 
 namespace paiv {
 
-  // char* tokenized;
-  // char* command = strsep(&line, " \t");
+
+  static string
+  availableFilename(const string& prefix)
+  {
+    string fn;
+    for (int i = 0; i < 0x10000 ; i++)
+    {
+      stringstream so;
+      so << prefix << setfill('0') << setw(4) << hex << i;
+      fn = so.str();
+      struct stat params;
+      if (stat(fn.c_str(), &params) != 0)
+        return fn;
+    }
+    return fn;
+  }
+
 
   class Command
   {
@@ -15,6 +30,7 @@ namespace paiv {
 
     string line;
     string name;
+    vector<string> args;
 
   private:
     void parse(const string& text);
@@ -27,7 +43,9 @@ namespace paiv {
     vector<string> tokens { istream_iterator<string>(ss), istream_iterator<string>() };
 
     if (tokens.size() > 0)
-      this->name = tokens[0];
+      name = tokens[0];
+    if (tokens.size() > 1)
+      copy(begin(tokens) + 1, end(tokens), back_inserter(args));
   }
 
 
@@ -51,15 +69,23 @@ namespace paiv {
   u8
   CommandDispatcher::process(const Command& command)
   {
-    if (command.name == "exit")
+    const string& name = command.name;
+
+    static const char* commands[] = { "save", "load", "restore", "restart", "reset" };
+
+    if (name == "exit" || name == "quit")
     {
       return false;
     }
-    else if (command.name == "run")
+    else if (find(begin(commands), end(commands), name) != end(commands))
     {
-      zmq::message_t request(3);
-      memcpy(request.data(), "run", 3);
+      const string& line = command.line;
+      zmq::message_t request(line.size());
+      memcpy(request.data(), line.c_str(), line.size());
       socket->send(request);
+
+      zmq::message_t reply;
+      socket->recv(&reply);
     }
     else {
       dprintf(pty, "%s\n", command.line.c_str());
@@ -69,27 +95,137 @@ namespace paiv {
   }
 
 
+  static void*
+  vmworker(void* arg)
+  {
+    shared_ptr<SynacorVM> vm = ((SynacorVM*)arg)->shared_from_this();
+
+    vm->run();
+
+    return nullptr;
+  }
+
+
   class CommandHandler
   {
   public:
-    CommandHandler(SynacorVM* vm)
+    CommandHandler(zmq::socket_t* socket, int pty, const vector<u8>& image)
+      : socket(socket), pty(pty), worker(0), baseImage(image)
     {
-      this->vm = vm;
     }
 
+    u8 resetWorker(const string& fn = "");
+    u8 process();
     u8 process(const Command& command);
 
   private:
-    SynacorVM* vm;
+    shared_ptr<SynacorVM> vm;
+    zmq::socket_t* socket;
+    int pty;
+    const vector<u8>& baseImage;
+    pthread_t worker;
   };
 
 
   u8
+  CommandHandler::resetWorker(const string& fn)
+  {
+    clog << "resetting from " << (fn.size() > 0 ? fn : "base image") << endl;
+
+    if (worker)
+    {
+      vm->halt();
+      vm = nullptr;
+
+      pthread_cancel(worker);
+      dprintf(pty, "\n");
+      pthread_join(worker, nullptr);
+
+      worker = 0;
+      fseek(stdin, 0, SEEK_END);
+    }
+
+    if (!vm)
+    {
+      vm = make_shared<SynacorVM>();
+    }
+
+    Snapshot snapshot;
+    if (fn.size() > 0)
+    {
+      if (!snapshot.load(fn))
+      {
+        cerr << "failed to load snapshot " << fn << endl;
+        return false;
+      }
+    }
+    else
+    {
+      ImageLoader loader;
+      snapshot.loadImage(loader.read(baseImage));
+    }
+
+    vm->load(snapshot);
+
+    pthread_t tid;
+    if (pthread_create(&tid, nullptr, vmworker, vm.get()) == 0)
+    {
+      worker = tid;
+      return true;
+    }
+
+    return false;
+  }
+
+  u8
+  CommandHandler::process()
+  {
+    if (!worker)
+      resetWorker();
+
+    zmq::message_t request;
+
+    if (socket->recv(&request))
+    {
+      string line((const char*)request.data(), request.size());
+
+      u8 done = !process(Command(line));
+
+      zmq::message_t reply;
+      socket->send(reply);
+
+      if (done) return false;
+    }
+
+    return true;
+  }
+
+  u8
   CommandHandler::process(const Command& command)
   {
-    if (command.name == "run")
+    const string& name = command.name;
+
+    if (name == "save")
     {
-      vm->run();
+      mkdir("saves", S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      auto snapshot = vm->save();
+      snapshot.save(availableFilename("saves/save"));
+    }
+    else if (name == "restart" || name == "reset")
+    {
+      resetWorker();
+    }
+    else if (name == "load" || name == "restore")
+    {
+      if (command.args.size() > 0)
+      {
+        string fn = command.args[0];
+        resetWorker(fn);
+      }
+    }
+    else
+    {
+      cerr << "handler: unhandled " << command.line << endl;
     }
     return true;
   }
