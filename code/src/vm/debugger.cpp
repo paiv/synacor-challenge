@@ -13,7 +13,8 @@ namespace paiv
     void disassemble(ostream& so);
     void showRegisters(ostream& so);
 
-    void breakNext();
+    void step();
+    void resume();
 
   private:
     zmq::context_t* context;
@@ -76,9 +77,14 @@ namespace paiv
   }
 
   void
-  Debugger::breakNext()
+  Debugger::step()
   {
     sendCommand("step");
+  }
+  void
+  Debugger::resume()
+  {
+    sendCommand("resume");
   }
 
 }

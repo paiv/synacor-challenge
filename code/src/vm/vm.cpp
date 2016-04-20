@@ -152,7 +152,7 @@ namespace paiv {
         {
           stopped = true;
         }
-        else if (command == "run")
+        else if (command == "resume")
         {
           stopped = false;
         }
