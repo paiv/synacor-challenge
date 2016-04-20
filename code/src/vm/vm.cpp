@@ -56,8 +56,12 @@ namespace paiv {
     array<u16, 1024*1024> stack;
     u16 ip;
     u16 sp;
+
+    u16 memoryUsed() const;
   };
 
+
+  static u8 vmid_sequence;
 
   class SynacorVM : public enable_shared_from_this<SynacorVM>
   {
@@ -71,9 +75,12 @@ namespace paiv {
     u16 sp;
 
     friend class Snapshot;
+    friend class Debugger;
 
   public:
-    SynacorVM() : ip(0), sp(0), stopped(false) {
+    SynacorVM() : id(vmid_sequence++), ip(0), sp(0), halted(false), stopped(false) {
+      receiveEndpoint = string("inproc://debug") + to_string(id);
+      reportEndpoint = string("inproc://vm") + to_string(id);
       mem.fill(0);
       reg.fill(0);
       stack.fill(0);
@@ -84,16 +91,27 @@ namespace paiv {
     void exec(Image& image);
 
     void load(Image& image);
-    void run();
-    void halt() { stopped = true; }
+    void run(zmq::socket_t* controller = nullptr, zmq::socket_t* publisher = nullptr);
+    void step();
+    void halt() { stopped = halted = true; }
 
     Snapshot save();
     void load(const Snapshot& snapshot);
+
+    string messagingEndpoint() const { return receiveEndpoint; }
+    string reportingEndpoint() const { return reportEndpoint; }
 
   private:
     u8 dispatch(u16 opcode, u16 a, u16 b, u16 c);
     u16 xnum(u16 x);
     u16& regr(u16 x);
+    void report(zmq::socket_t* publisher, const string& data) const;
+
+  private:
+    u8 id;
+    string receiveEndpoint;
+    string reportEndpoint;
+    u8 halted;
     u8 stopped;
   };
 
@@ -114,13 +132,65 @@ namespace paiv {
   }
 
   void
-  SynacorVM::run()
+  SynacorVM::run(zmq::socket_t* controller, zmq::socket_t* publisher)
   {
-    while (!stopped)
+    zmq::message_t message;
+    u8 breakpointNext = false;
+
+    while (!halted)
     {
-      if (!dispatch(mem[ip], mem[ip + 1], mem[ip + 2], mem[ip + 3]))
-        stopped = true;
+      if (controller && controller->recv(&message, ZMQ_DONTWAIT))
+      {
+        string command((char*)message.data(), message.size());
+
+        if (command == "step")
+        {
+          breakpointNext = true;
+          stopped = false;
+        }
+        else if (command == "stop")
+        {
+          stopped = true;
+        }
+        else if (command == "run")
+        {
+          stopped = false;
+        }
+      }
+
+      if (!stopped)
+      {
+        step();
+        if (breakpointNext)
+        {
+          breakpointNext = false;
+          stopped = true;
+
+          report(publisher, "stopped");
+        }
+      }
+      else
+      {
+        usleep(1000);
+      }
     }
+  }
+
+  void
+  SynacorVM::report(zmq::socket_t* publisher, const string& data) const
+  {
+    if (publisher)
+    {
+      zmq::message_t message(data.c_str(), data.size());
+      publisher->send(message);
+    }
+  }
+
+  void
+  SynacorVM::step()
+  {
+    if (!dispatch(mem[ip], mem[ip + 1], mem[ip + 2], mem[ip + 3]))
+      halted = true;
   }
 
   inline u16
@@ -306,15 +376,21 @@ namespace paiv {
 
   static const Signature SIGNv1 = { "SYNACOR" };
 
+  u16
+  Snapshot::memoryUsed() const
+  {
+    auto it = find_if(mem.rbegin(), mem.rend(), [](u16 x){ return x != 0; });
+    return distance(it, mem.rend());
+  }
+
   u8
   Snapshot::save(const string& fn)
   {
-    auto it = find_if(mem.rbegin(), mem.rend(), [](u16 x){ return x != 0; });
-    u16 memUsed = distance(it, mem.rend());
-
     ofstream ofs(fn, ios::binary | ios::trunc);
     if (!ofs.good())
       return false;
+
+    u16 memUsed = memoryUsed();
 
     ofs.write(SIGNv1.chars, sizeof(SIGNv1));
     ofs.write((char*)&reg[0], reg.size() * 2);

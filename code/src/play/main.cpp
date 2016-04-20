@@ -15,6 +15,8 @@
 #include "../vm/types.hpp"
 #include "../vm/opcodes.hpp"
 #include "../vm/vm.cpp"
+#include "../ida/disasm.cpp"
+#include "../vm/debugger.cpp"
 #include "commands.cpp"
 
 using namespace std;
@@ -50,6 +52,7 @@ int main(int argc, char* argv[])
     socket.connect("tcp://127.0.0.1:7199");
 
     CommandDispatcher dispatcher(fdparent, &socket);
+    Command lastCommand("");
 
     while (true)
     {
@@ -62,8 +65,13 @@ int main(int argc, char* argv[])
       Command command(line);
       free(line);
 
+      if (command.name == "")
+        command = lastCommand;
+
       if (!dispatcher.process(command))
         break;
+
+      lastCommand = command;
     }
 
     int state;
@@ -82,14 +90,8 @@ int main(int argc, char* argv[])
 
     vector<u8> image(begin(challenge_bin), end(challenge_bin));
 
-    CommandHandler handler(&socket, fdparent, image);
-
-    while (true)
-    {
-      if (!handler.process())
-        break;
-    }
-
+    CommandHandler handler(&context, &socket, fdparent, image);
+    handler.run();
   }
 
   cout << endl;

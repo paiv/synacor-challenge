@@ -71,7 +71,8 @@ namespace paiv {
   {
     const string& name = command.name;
 
-    static const char* commands[] = { "save", "load", "restore", "restart", "reset" };
+    static const char* commands[] = { "save", "load", "restore", "restart", "reset",
+      "di", "dis", "disassemble", "reg", "regs", "registers", "s", "si", "step" };
 
     if (name == "exit" || name == "quit")
     {
@@ -95,12 +96,27 @@ namespace paiv {
   }
 
 
-  static void*
-  vmworker(void* arg)
+  typedef struct
   {
-    shared_ptr<SynacorVM> vm = ((SynacorVM*)arg)->shared_from_this();
+    SynacorVM* vm;
+    zmq::context_t* context;
+  } WorkerArgs;
 
-    vm->run();
+
+  static void*
+  vmworker(void* obj)
+  {
+    WorkerArgs* args = (WorkerArgs*)obj;
+
+    shared_ptr<SynacorVM> vm = args->vm->shared_from_this();
+
+    zmq::socket_t receiver(*args->context, ZMQ_PAIR);
+    receiver.bind(vm->messagingEndpoint());
+
+    zmq::socket_t publisher(*args->context, ZMQ_PUB);
+    publisher.bind(vm->reportingEndpoint());
+
+    vm->run(&receiver, &publisher);
 
     return nullptr;
   }
@@ -109,18 +125,22 @@ namespace paiv {
   class CommandHandler
   {
   public:
-    CommandHandler(zmq::socket_t* socket, int pty, const vector<u8>& image)
-      : socket(socket), pty(pty), worker(0), baseImage(image)
+    CommandHandler(zmq::context_t* context, zmq::socket_t* socket, int pty, const vector<u8>& image)
+      : context(context), socket(socket), pty(pty), worker(0), baseImage(image)
     {
     }
 
+    void run();
+
     u8 resetWorker(const string& fn = "");
-    u8 process();
     u8 process(const Command& command);
+    void handle(const string& event);
 
   private:
     shared_ptr<SynacorVM> vm;
+    zmq::context_t* context;
     zmq::socket_t* socket;
+    unique_ptr<zmq::socket_t> debugEvents;
     int pty;
     const vector<u8>& baseImage;
     pthread_t worker;
@@ -139,6 +159,7 @@ namespace paiv {
       dprintf(pty, "\n");
       pthread_join(worker, nullptr);
 
+      debugEvents = nullptr;
       worker = 0;
       int c;
       while ((c = getchar()) != '\n' && c != EOF) ;
@@ -147,6 +168,10 @@ namespace paiv {
     if (!vm)
     {
       vm = make_shared<SynacorVM>();
+
+      debugEvents = unique_ptr<zmq::socket_t>(new zmq::socket_t(*context, ZMQ_SUB));
+      debugEvents->connect(vm->reportingEndpoint());
+      debugEvents->setsockopt(ZMQ_SUBSCRIBE, "", 0);
     }
 
     Snapshot snapshot;
@@ -166,8 +191,9 @@ namespace paiv {
 
     vm->load(snapshot);
 
+    WorkerArgs args = { vm.get(), context };
     pthread_t tid;
-    if (pthread_create(&tid, nullptr, vmworker, vm.get()) == 0)
+    if (pthread_create(&tid, nullptr, vmworker, &args) == 0)
     {
       worker = tid;
       return true;
@@ -176,27 +202,50 @@ namespace paiv {
     return false;
   }
 
-  u8
-  CommandHandler::process()
+  void
+  CommandHandler::run()
   {
-    if (!worker)
-      resetWorker();
+    vector<zmq::pollitem_t> items;
 
-    zmq::message_t request;
-
-    if (socket->recv(&request))
+    while (true)
     {
-      string line((const char*)request.data(), request.size());
+      if (!worker)
+      {
+        resetWorker();
 
-      u8 done = !process(Command(line));
+        items.clear();
+        items.push_back({ (void*)*socket, 0, ZMQ_POLLIN, 0 });
+        if (debugEvents)
+          items.push_back({ (void*)*debugEvents.get(), 0, ZMQ_POLLIN, 0 });
+      }
 
-      zmq::message_t reply;
-      socket->send(reply);
+      zmq::poll(items);
 
-      if (done) return false;
+      if (items[0].revents & ZMQ_POLLIN)
+      {
+        zmq::message_t message;
+        socket->recv(&message);
+
+        string line((const char*)message.data(), message.size());
+
+        u8 done = !process(Command(line));
+
+        zmq::message_t reply;
+        socket->send(reply);
+
+        if (done) break;
+      }
+
+      if (debugEvents && (items[1].revents & ZMQ_POLLIN))
+      {
+        zmq::message_t message;
+        debugEvents->recv(&message);
+
+        string event((char*)message.data(), message.size());
+
+        handle(event);
+      }
     }
-
-    return true;
   }
 
   u8
@@ -225,11 +274,36 @@ namespace paiv {
         }
       }
     }
+    else if (name == "di" || name == "dis" || name == "disassemble")
+    {
+      Debugger dbg(context, vm.get());
+      dbg.disassemble(cout);
+    }
+    else if (name == "reg" || name == "regs" || name == "registers")
+    {
+      Debugger dbg(context, vm.get());
+      dbg.showRegisters(cout);
+    }
+    else if (name == "s" || name == "si" || name == "step")
+    {
+      Debugger dbg(context, vm.get());
+      dbg.breakNext();
+    }
     else
     {
       cerr << "handler: unhandled " << command.line << endl;
     }
     return true;
+  }
+
+  void
+  CommandHandler::handle(const string& event)
+  {
+    if (event == "stopped")
+    {
+      Debugger dbg(context, vm.get());
+      dbg.disassemble(cout);
+    }
   }
 
 }

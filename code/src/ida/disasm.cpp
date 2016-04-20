@@ -27,11 +27,13 @@ namespace paiv {
   {
   public:
     void disassemble(const vector<u16>& image, ostream& so);
+
     vector<Operation> decode(const vector<u16>& image);
     Operation decode(u16 opcode, u16 a, u16 b, u16 c);
 
+    void format(ostream& so, Operation& op, u8 selected = false);
+
   private:
-    void format(ostream& so, Operation& op);
     string formatData(const vector<u16>& data);
     string opname(u16 opcode);
     string argname(u16 arg);
@@ -144,11 +146,12 @@ namespace paiv {
   }
 
   void
-  Disassembler::format(ostream& so, Operation& op)
+  Disassembler::format(ostream& so, Operation& op, u8 selected)
   {
     so << setfill('0') << setw(4) << right << hex << uppercase << op.offset << ':';
     so << dec << setfill(' ');
-    so << setw(4) << " " << setw(4) << left << opname(op.opcode);
+    so << setw(3) << (selected ? '>' : ' ') << ' ';
+    so << setw(4) << left << opname(op.opcode);
 
     if (op.size > 1)
     {
@@ -172,9 +175,10 @@ namespace paiv {
   string
   Disassembler::argname(u16 arg)
   {
-    return arg < 32768 ? to_hex(arg)
+    return arg < 16 ? to_string(arg)
+      : arg < 32768 ? to_hex(arg)
       : arg > 32775 ? "(invalid)"
-      : (string("reg") + to_string(arg - 32768));
+      : (string("r") + to_string(arg - 32768));
   }
 
   string
