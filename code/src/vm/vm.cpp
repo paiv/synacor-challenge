@@ -4,6 +4,19 @@ namespace paiv {
   using namespace std;
 
 
+  typedef struct
+  {
+    string name;
+    u16 arg;
+  } DebuggerCommand;
+
+  typedef struct
+  {
+    string name;
+    string arg;
+  } VmEvent;
+
+
   class ImageLoader
   {
   public:
@@ -105,7 +118,7 @@ namespace paiv {
     u8 dispatch(u16 opcode, u16 a, u16 b, u16 c);
     u16 xnum(u16 x);
     u16& regr(u16 x);
-    void report(zmq::socket_t* publisher, const string& data) const;
+    void report(zmq::socket_t* publisher, const string& name, const string& arg = "") const;
 
   private:
     u8 id;
@@ -113,6 +126,8 @@ namespace paiv {
     string reportEndpoint;
     u8 halted;
     u8 stopped;
+    u16 lastOp;
+    vector<u16> executionBreakpoints;
   };
 
 
@@ -136,37 +151,72 @@ namespace paiv {
   {
     zmq::message_t message;
     u8 breakpointNext = false;
+    u8 breakpointRet = false;
 
     while (!halted)
     {
       if (controller && controller->recv(&message, ZMQ_DONTWAIT))
       {
-        string command((char*)message.data(), message.size());
+        DebuggerCommand command = *message.data<DebuggerCommand>();
 
-        if (command == "step")
+        if (command.name == "step")
         {
           breakpointNext = true;
           stopped = false;
+          step();
         }
-        else if (command == "stop")
+        else if (command.name == "step-out")
+        {
+          breakpointRet = true;
+          stopped = false;
+          step();
+        }
+        else if (command.name == "stop")
         {
           stopped = true;
         }
-        else if (command == "resume")
+        else if (command.name == "resume")
         {
           stopped = false;
+          step();
+        }
+        else if (command.name == "info breakpoints")
+        {
+          string bps = accumulate(begin(executionBreakpoints), end(executionBreakpoints), string(),
+            [](const string& a, u16 b) {
+              stringstream so;
+              so << a << ' ' << setfill('0') << setw(4) << hex << b;
+              return so.str();
+            });
+
+          report(publisher, "breakpoints", bps);
+        }
+        else if (command.name == "set breakpoint")
+        {
+          executionBreakpoints.push_back(command.arg);
+        }
+        else if (command.name == "clear breakpoint")
+        {
+          auto it = find(begin(executionBreakpoints), end(executionBreakpoints), command.arg);
+          if (it != end(executionBreakpoints))
+            executionBreakpoints.erase(it);
         }
       }
 
       if (!stopped)
       {
-        step();
-        if (breakpointNext)
+        if (breakpointNext
+          || find(begin(executionBreakpoints), end(executionBreakpoints), ip) != end(executionBreakpoints)
+          || (breakpointRet && lastOp == Op::RET))
         {
           breakpointNext = false;
+          breakpointRet = false;
           stopped = true;
-
           report(publisher, "stopped");
+        }
+        else
+        {
+          step();
         }
       }
       else
@@ -177,11 +227,12 @@ namespace paiv {
   }
 
   void
-  SynacorVM::report(zmq::socket_t* publisher, const string& data) const
+  SynacorVM::report(zmq::socket_t* publisher, const string& name, const string& arg) const
   {
     if (publisher)
     {
-      zmq::message_t message(data.c_str(), data.size());
+      VmEvent event = { name, arg };
+      zmq::message_t message((void*)&event, sizeof(event));
       publisher->send(message);
     }
   }
@@ -320,6 +371,8 @@ namespace paiv {
         __builtin_trap();
         break;
     }
+
+    lastOp = opcode;
 
     return true;
   }

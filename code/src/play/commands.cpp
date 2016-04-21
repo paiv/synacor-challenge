@@ -72,17 +72,17 @@ namespace paiv {
     const string& name = command.name;
 
     static const char* commands[] = { "save", "load", "restore", "restart", "reset",
-      "di", "dis", "disassemble", "reg", "regs", "registers", "s", "si", "step", "c", "continue" };
+      "di", "dis", "disassemble", "reg", "regs", "registers", "s", "si", "step", "c", "continue",
+      "b", "break", "clear", "fin", "finish" };
 
-    if (name == "exit" || name == "quit")
+    if (name == "q" || name == "quit" || name == "exit")
     {
       return false;
     }
     else if (find(begin(commands), end(commands), name) != end(commands))
     {
       const string& line = command.line;
-      zmq::message_t request(line.size());
-      memcpy(request.data(), line.c_str(), line.size());
+      zmq::message_t request(line.c_str(), line.size());
       socket->send(request);
 
       zmq::message_t reply;
@@ -134,7 +134,7 @@ namespace paiv {
 
     u8 resetWorker(const string& fn = "");
     u8 process(const Command& command);
-    void handle(const string& event);
+    void handle(const VmEvent& event);
 
   private:
     shared_ptr<SynacorVM> vm;
@@ -155,8 +155,7 @@ namespace paiv {
       vm->halt();
       vm = nullptr;
 
-      pthread_cancel(worker);
-      dprintf(pty, "\n");
+      dprintf(pty, "\n\n");
       pthread_join(worker, nullptr);
 
       debugEvents = nullptr;
@@ -212,12 +211,12 @@ namespace paiv {
       if (!worker)
       {
         resetWorker();
-
-        items.clear();
-        items.push_back({ (void*)*socket, 0, ZMQ_POLLIN, 0 });
-        if (debugEvents)
-          items.push_back({ (void*)*debugEvents.get(), 0, ZMQ_POLLIN, 0 });
       }
+
+      items.clear();
+      items.push_back({ (void*)*socket, 0, ZMQ_POLLIN, 0 });
+      if (debugEvents)
+        items.push_back({ (void*)*debugEvents.get(), 0, ZMQ_POLLIN, 0 });
 
       zmq::poll(items);
 
@@ -241,8 +240,7 @@ namespace paiv {
         zmq::message_t message;
         debugEvents->recv(&message);
 
-        string event((char*)message.data(), message.size());
-
+        VmEvent event = *message.data<VmEvent>();
         handle(event);
       }
     }
@@ -294,6 +292,35 @@ namespace paiv {
       Debugger dbg(context, vm.get());
       dbg.resume();
     }
+    else if (name == "b" || name == "break")
+    {
+      Debugger dbg(context, vm.get());
+
+      if (command.args.size() > 0)
+      {
+        u16 a = stoul(command.args[0], 0, 16);
+        dbg.breakOn(a);
+      }
+      else
+      {
+        dbg.listBreakpoints();
+      }
+    }
+    else if (name == "clear")
+    {
+      Debugger dbg(context, vm.get());
+
+      if (command.args.size() > 0)
+      {
+        u16 a = stoul(command.args[0], 0, 16);
+        dbg.clearBreakpoint(a);
+      }
+    }
+    else if (name == "fin" || name == "finish")
+    {
+      Debugger dbg(context, vm.get());
+      dbg.stepOut();
+    }
     else
     {
       cerr << "handler: unhandled " << command.line << endl;
@@ -302,12 +329,16 @@ namespace paiv {
   }
 
   void
-  CommandHandler::handle(const string& event)
+  CommandHandler::handle(const VmEvent& event)
   {
-    if (event == "stopped")
+    if (event.name == "stopped")
     {
       Debugger dbg(context, vm.get());
       dbg.disassemble(cout);
+    }
+    else if (event.name == "breakpoints")
+    {
+      cout << "breakpoints: " << event.arg << endl;
     }
   }
 

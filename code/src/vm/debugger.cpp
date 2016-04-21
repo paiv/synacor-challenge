@@ -14,14 +14,18 @@ namespace paiv
     void showRegisters(ostream& so);
 
     void step();
+    void stepOut();
     void resume();
+    void breakOn(u16 address);
+    void listBreakpoints();
+    void clearBreakpoint(u16 address);
 
   private:
     zmq::context_t* context;
     SynacorVM* vm;
 
   private:
-    void sendCommand(const string& command) const;
+    void sendCommand(const string& name, u16 arg = 0) const;
   };
 
 
@@ -67,12 +71,13 @@ namespace paiv
   }
 
   void
-  Debugger::sendCommand(const string& command) const
+  Debugger::sendCommand(const string& name, u16 arg) const
   {
     zmq::socket_t socket(*context, ZMQ_PAIR);
     socket.connect(vm->messagingEndpoint());
 
-    zmq::message_t message(command.c_str(), command.size());
+    DebuggerCommand command = { name, arg };
+    zmq::message_t message((void*)&command, sizeof(command));
     socket.send(message);
   }
 
@@ -81,10 +86,35 @@ namespace paiv
   {
     sendCommand("step");
   }
+
+  void
+  Debugger::stepOut()
+  {
+    sendCommand("step-out");
+  }
+
   void
   Debugger::resume()
   {
     sendCommand("resume");
+  }
+
+  void
+  Debugger::breakOn(u16 address)
+  {
+    sendCommand("set breakpoint", address);
+  }
+
+  void
+  Debugger::listBreakpoints()
+  {
+    sendCommand("info breakpoints");
+  }
+
+  void
+  Debugger::clearBreakpoint(u16 address)
+  {
+    sendCommand("clear breakpoint", address);
   }
 
 }
