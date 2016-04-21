@@ -11,7 +11,10 @@ namespace paiv
     }
 
     void disassemble(ostream& so);
+    void disassemble(ostream& so, u16 address);
     void showRegisters(ostream& so);
+    void dumpMemory(ostream& so, u16 address, u16 size = 16);
+    void showStack(ostream& so, u16 size = 8);
 
     void step();
     void stepOut();
@@ -32,6 +35,12 @@ namespace paiv
   void
   Debugger::disassemble(ostream& so)
   {
+    disassemble(so, vm->ip);
+  }
+
+  void
+  Debugger::disassemble(ostream& so, u16 address)
+  {
     auto snapshot = vm->save();
     u16 memUsed = snapshot.memoryUsed();
     vector<u16> mem(begin(snapshot.mem), begin(snapshot.mem) + memUsed);
@@ -40,7 +49,7 @@ namespace paiv
     auto ops = disasm.decode(mem);
 
     Operation stub;
-    stub.offset = snapshot.ip;
+    stub.offset = address ? address : snapshot.ip;
 
     auto it = lower_bound(begin(ops), end(ops), stub,
       [](const Operation& a, const Operation& b){ return a.offset < b.offset; });
@@ -60,6 +69,8 @@ namespace paiv
   {
     auto snapshot = vm->save();
 
+    so << setfill(' ');
+
     for (size_t i = 0; i < snapshot.reg.size(); i++)
       so << setw(3) << right << 'r' << i << ' ';
     so << endl;
@@ -68,6 +79,54 @@ namespace paiv
     for (auto& r : snapshot.reg)
       so << hex << setw(4) << r << ' ';
     so << endl;
+  }
+
+  void
+  Debugger::dumpMemory(ostream& so, u16 address, u16 size)
+  {
+    auto snapshot = vm->save();
+    auto& mem = snapshot.mem;
+
+    so << setfill('0') << hex;
+
+    stringstream ascii;
+    u16 n = 0;
+
+    for (u16 p = address; n < size && p < mem.size(); n++, p++)
+    {
+      if (n % 8 == 0)
+      {
+        if (n > 1)
+        {
+          so << ' ' << ascii.str() << endl;
+          ascii.str("");
+        }
+        so << p << ": ";
+      }
+
+      u16 x = mem[p];
+      so << setw(4) << x << ' ';
+      ascii << (x > 31 && x < 128 ? (char)x : '.');
+    }
+
+    if (n % 8)
+      so << setfill(' ') << setw((8 - (n % 8)) * 5) << ' ';
+    so << ' ' << ascii.str() << endl;
+  }
+
+  void
+  Debugger::showStack(ostream& so, u16 size)
+  {
+    auto snapshot = vm->save();
+    auto& stack = snapshot.stack;
+    u16 address = snapshot.sp - 1;
+
+    so << setfill('0') << hex << right;
+
+    for (int p = address, n = 0; n < size && p >= 0; n++, p--)
+    {
+      so << setw(4) << p << ": " << setw(4) << stack[p] << endl;
+    }
   }
 
   void

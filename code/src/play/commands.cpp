@@ -73,7 +73,7 @@ namespace paiv {
 
     static const char* commands[] = { "save", "load", "restore", "restart", "reset",
       "di", "dis", "disassemble", "reg", "regs", "registers", "s", "si", "step", "c", "continue",
-      "b", "break", "clear", "fin", "finish" };
+      "b", "break", "clear", "fin", "finish", "m", "mem", "memory", "stack" };
 
     if (name == "q" || name == "quit" || name == "exit")
     {
@@ -275,12 +275,37 @@ namespace paiv {
     else if (name == "di" || name == "dis" || name == "disassemble")
     {
       Debugger dbg(context, vm.get());
-      dbg.disassemble(cout);
+      if (command.args.size() > 0)
+      {
+        u16 address = stoul(command.args[0], 0, 16);
+        dbg.disassemble(cout, address);
+      }
+      else
+      {
+        dbg.disassemble(cout);
+      }
     }
     else if (name == "reg" || name == "regs" || name == "registers")
     {
       Debugger dbg(context, vm.get());
       dbg.showRegisters(cout);
+    }
+    else if (name == "m" || name == "mem" || name == "memory")
+    {
+      Debugger dbg(context, vm.get());
+      if (command.args.size() > 0)
+      {
+        u16 address = stoul(command.args[0], 0, 16);
+        u16 size = 16;
+        if (command.args.size() > 1)
+          size = stoul(command.args[1], 0, 16);
+        dbg.dumpMemory(cout, address, size);
+      }
+    }
+    else if (name == "stack")
+    {
+      Debugger dbg(context, vm.get());
+      dbg.showStack(cout);
     }
     else if (name == "s" || name == "si" || name == "step")
     {
