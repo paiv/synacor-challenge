@@ -87,7 +87,7 @@ namespace paiv
     auto snapshot = vm->save();
     auto& mem = snapshot.mem;
 
-    so << setfill('0') << hex;
+    so << setfill('0') << right << hex;
 
     stringstream ascii;
     u16 n = 0;
@@ -101,7 +101,7 @@ namespace paiv
           so << ' ' << ascii.str() << endl;
           ascii.str("");
         }
-        so << p << ": ";
+        so << setw(4) << p << ": ";
       }
 
       u16 x = mem[p];

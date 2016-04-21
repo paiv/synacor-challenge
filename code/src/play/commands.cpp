@@ -72,7 +72,7 @@ namespace paiv {
     const string& name = command.name;
 
     static const char* commands[] = { "save", "load", "restore", "restart", "reset",
-      "di", "dis", "disassemble", "reg", "regs", "registers", "s", "si", "step", "c", "continue",
+      "di", "dis", "disassemble", "reg", "regs", "registers", "s", "si", "step", "c", "cont",
       "b", "break", "clear", "fin", "finish", "m", "mem", "memory", "stack" };
 
     if (name == "q" || name == "quit" || name == "exit")
@@ -312,7 +312,7 @@ namespace paiv {
       Debugger dbg(context, vm.get());
       dbg.step();
     }
-    else if (name == "c" || name == "continue")
+    else if (name == "c" || name == "cont")
     {
       Debugger dbg(context, vm.get());
       dbg.resume();

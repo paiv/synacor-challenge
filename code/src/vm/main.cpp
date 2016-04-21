@@ -1,14 +1,20 @@
 #include <array>
 #include <fstream>
+#include <iomanip>
 #include <iostream>
+#include <numeric>
+#include <sstream>
+#include <unistd.h>
 #include <vector>
+#include <zmq.hpp>
+
+using namespace std;
 
 #include "types.hpp"
 #include "opcodes.hpp"
 #include "loader.hpp"
 #include "vm.cpp"
 
-using namespace std;
 using namespace paiv;
 
 int main(int argc, char* argv[])

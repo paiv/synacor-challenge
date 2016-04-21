@@ -27,7 +27,6 @@ int main(int argc, char* argv[])
 
   ImageLoader loader;
   auto image = loader.read(argv[1]);
-  // vector<u16> image = { Op::JMP, 2, 'a', 'b', 'c', 0x6564, 2000, 2109, 'x', 'z', Op::OUT, 'X', Op::OUT, '\n', Op::RET };
 
   Disassembler disasm;
   disasm.disassemble(image, cout);

@@ -91,14 +91,12 @@ namespace paiv
 }
 
 
-static void
-walkDungeon(ostream& so, const chunk& image, u16 address)
+static unordered_set<u16>
+walkDungeon(ostream& so, const chunk& image, u16 address, unordered_set<u16> visited)
 {
   Entry entry(image, address, 4);
 
   queue<Entry> fringe;
-  unordered_set<u16> visited;
-
   fringe.push(entry);
 
   while (fringe.size() > 0)
@@ -110,7 +108,7 @@ walkDungeon(ostream& so, const chunk& image, u16 address)
       continue;
     visited.insert(entry.offset());
 
-    so << '"' << entry.id() << "\" [label=\"" /*<< entry.id() << ": "*/ << entry.title() << "\"]" << endl;
+    so << '"' << entry.id() << "\" [label=\"" << entry.id() << ": " << entry.title() << "\"]" << endl;
 
     int i = 0;
     for (auto& link : entry.links())
@@ -120,16 +118,20 @@ walkDungeon(ostream& so, const chunk& image, u16 address)
         fringe.push(link);
     }
   }
+
+  return visited;
 }
 
 template <size_t N>
 static void
 walkDungeon(ostream& so, const chunk& image, const u16 (&entries)[N])
 {
+  unordered_set<u16> visited;
+
   so << "digraph \"Synacore\" {" << endl;
 
   for (u16 entry : entries)
-    walkDungeon(so, image, entry);
+    visited = walkDungeon(so, image, entry, visited);
 
   so << "}" << endl;
 }

@@ -6,8 +6,9 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 add_subdirectory("vm")
 add_subdirectory("ida")
-add_subdirectory("test")
+# add_subdirectory("test")
+add_subdirectory("mapper")
 add_subdirectory("play")
 
-enable_testing()
-add_test(NAME test COMMAND test_synacor)
+# enable_testing()
+# add_test(NAME test COMMAND test_synacor)
