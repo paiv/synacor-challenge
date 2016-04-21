@@ -13,14 +13,16 @@
 #include <signal.h>
 #include <sys/stat.h>
 
+using namespace std;
+
 #include "../vm/types.hpp"
 #include "../vm/opcodes.hpp"
+#include "../vm/loader.hpp"
 #include "../vm/vm.cpp"
 #include "../ida/disasm.cpp"
 #include "../vm/debugger.cpp"
 #include "commands.cpp"
 
-using namespace std;
 using namespace paiv;
 
 #include "challenge.cpp"

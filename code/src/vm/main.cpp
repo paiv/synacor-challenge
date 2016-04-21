@@ -5,6 +5,7 @@
 
 #include "types.hpp"
 #include "opcodes.hpp"
+#include "loader.hpp"
 #include "vm.cpp"
 
 using namespace std;

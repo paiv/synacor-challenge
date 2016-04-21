@@ -1,18 +1,20 @@
 #include <array>
+#include <fstream>
 #include <iomanip>
 #include <iostream>
-#include <fstream>
+#include <numeric>
 #include <sstream>
 #include <vector>
 
+using namespace std;
+
 #include "../vm/types.hpp"
 #include "../vm/opcodes.hpp"
-#include "../vm/vm.cpp"
+#include "../vm/loader.hpp"
+
 #include "disasm.cpp"
 
-using namespace std;
 using namespace paiv;
-
 
 
 int main(int argc, char* argv[])

@@ -73,8 +73,6 @@ namespace paiv {
       if (ip + 2 < size) b = image[ip + 2];
       if (ip + 3 < size) c = image[ip + 3];
 
-      // clog << ip << ": " << opcode << endl;
-
       if (ip > 0x17B3)
       {
         auto op = Operation{ 1, Op::DATA, opcode };
