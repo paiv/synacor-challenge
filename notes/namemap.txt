@@ -1,14 +1,41 @@
 05B2  print secure string
+05EE  print string
 05FB  xor and out
 0623  find (str, char)
 06E7  getstring
 084D  xor
+0865  x+y, overflow flag
+086E  x-y, overflow flag
+0882  x*y, overflow flag
+08E9  2^x (1..0x4000, 0x7fff)
+08C8  rot left
 0A6B  mapping object - location
+0A9C  orb object
+0A9E  (0A9C+2) where is orb
+0AAC  player location
 0B86  dispatch command
 0CAD  south
 0E8E  passage pointer ?
 0E8F  (0E8E OR-ed with r0)
 0EDE  passage with oil can
+
+0F69  green red yellow; sum sub mul
+0F6F  orb color (from current room color)
+0F70  orb weight
+0F71  color state param
+0F72  hourglass state param
+0F73
+0F74
+0F75
+
+0F76
+
+107A  set orb color to room color
+10B7  adjust orb weight
+1135  vault lock (x,y); return x (0..2 room color)
+11B5  vault door
+1234  reset vault lock (overflow)
+
 1545  teleport function
 154B  teleport energy level
 178B  (ackermann) teleport security check
