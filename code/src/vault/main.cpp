@@ -136,6 +136,16 @@ namespace paiv
     return next;
   }
 
+
+  static ostream&
+  print(ostream& so, const vector<string>& path)
+  {
+    for (auto& step : path)
+      so << step << " ";
+    return so;
+  }
+
+
   typedef queue<search_state> fringe;
   typedef unordered_set<search_state> history;
 }
@@ -247,11 +257,7 @@ int main(int argc, char* argv[])
   auto path = force(locks);
 
   if (path.size() > 0)
-  {
-    for (auto& step : path)
-      cout << step << " ";
-    cout << endl;
-  }
+    print(cout, path) << endl;
 
   return 0;
 }
