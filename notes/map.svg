@@ -1,0 +1,1261 @@
+<svg width="1463pt" height="2402pt" viewBox="0.00 0.00 1463.34 2402.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph1" class="graph" transform="scale(1 1) rotate(0) translate(4 2398)">
+<title>Synacore</title>
+<polygon fill="white" stroke="white" points="-4,5 -4,-2398 1460.34,-2398 1460.34,5 -4,5"></polygon>
+<!-- 090d -->
+<g id="node1" class="node"><title>090d</title>
+<ellipse fill="none" stroke="black" cx="672" cy="-2376" rx="45.0715" ry="18"></ellipse>
+<text text-anchor="middle" x="672" y="-2371.8" font-family="Times,serif" font-size="14.00">Foothills</text>
+</g>
+<!-- 0917 -->
+<g id="node3" class="node"><title>0917</title>
+<ellipse fill="none" stroke="black" cx="606" cy="-2286" rx="50.1614" ry="18"></ellipse>
+<text text-anchor="middle" x="606" y="-2281.8" font-family="Times,serif" font-size="14.00">Dark cave</text>
+</g>
+<!-- 090d&#45;&gt;0917 -->
+<g id="edge2" class="edge"><title>090d-&gt;0917</title>
+<path fill="none" stroke="black" d="M628.671,-2370.58C608.893,-2366.15 587.208,-2357.36 575.018,-2340 568.415,-2330.6 572.868,-2319.71 580.237,-2310.26"></path>
+<polygon fill="black" stroke="black" points="582.907,-2312.53 586.933,-2302.73 577.674,-2307.88 582.907,-2312.53"></polygon>
+<text text-anchor="middle" x="600.491" y="-2326.8" font-family="Times,serif" font-size="14.00">doorway</text>
+</g>
+<!-- 0912 -->
+<g id="node5" class="node"><title>0912</title>
+<ellipse fill="none" stroke="black" cx="725" cy="-2286" rx="45.0715" ry="18"></ellipse>
+<text text-anchor="middle" x="725" y="-2281.8" font-family="Times,serif" font-size="14.00">Foothills</text>
+</g>
+<!-- 090d&#45;&gt;0912 -->
+<g id="edge4" class="edge"><title>090d-&gt;0912</title>
+<path fill="none" stroke="black" d="M680.112,-2357.94C685.329,-2347.38 692.459,-2333.65 699.665,-2322 701.779,-2318.58 704.119,-2315.06 706.496,-2311.63"></path>
+<polygon fill="black" stroke="black" points="709.413,-2313.57 712.379,-2303.39 703.717,-2309.5 709.413,-2313.57"></polygon>
+<text text-anchor="middle" x="715.168" y="-2326.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 0917&#45;&gt;090d -->
+<g id="edge8" class="edge"><title>0917-&gt;090d</title>
+<path fill="none" stroke="black" d="M618.358,-2303.48C628.207,-2316.61 642.154,-2335.21 653.358,-2350.14"></path>
+<polygon fill="black" stroke="black" points="650.786,-2352.55 659.586,-2358.45 656.386,-2348.35 650.786,-2352.55"></polygon>
+<text text-anchor="middle" x="660.168" y="-2326.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 091c -->
+<g id="node7" class="node"><title>091c</title>
+<ellipse fill="none" stroke="black" cx="565" cy="-2196" rx="50.1614" ry="18"></ellipse>
+<text text-anchor="middle" x="565" y="-2191.8" font-family="Times,serif" font-size="14.00">Dark cave</text>
+</g>
+<!-- 0917&#45;&gt;091c -->
+<g id="edge6" class="edge"><title>0917-&gt;091c</title>
+<path fill="none" stroke="black" d="M575.915,-2271.49C567.424,-2266.09 559.209,-2258.99 554.449,-2250 550.219,-2242.02 550.665,-2232.54 552.868,-2223.82"></path>
+<polygon fill="black" stroke="black" points="556.275,-2224.66 556.085,-2214.07 549.628,-2222.47 556.275,-2224.66"></polygon>
+<text text-anchor="middle" x="569.776" y="-2236.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 0912&#45;&gt;090d -->
+<g id="edge10" class="edge"><title>0912-&gt;090d</title>
+<path fill="none" stroke="black" d="M731.472,-2304.29C734.433,-2315.2 736.088,-2329.22 730,-2340 725.935,-2347.2 719.727,-2353.09 712.861,-2357.84"></path>
+<polygon fill="black" stroke="black" points="710.658,-2355.08 703.923,-2363.26 714.288,-2361.06 710.658,-2355.08"></polygon>
+<text text-anchor="middle" x="749.776" y="-2326.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 091c&#45;&gt;0917 -->
+<g id="edge14" class="edge"><title>091c-&gt;0917</title>
+<path fill="none" stroke="black" d="M574.637,-2213.91C577.754,-2219.59 581.14,-2226.01 584,-2232 588.072,-2240.53 592.148,-2250.02 595.665,-2258.58"></path>
+<polygon fill="black" stroke="black" points="592.516,-2260.13 599.503,-2268.09 599.008,-2257.51 592.516,-2260.13"></polygon>
+<text text-anchor="middle" x="607.168" y="-2236.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 0921 -->
+<g id="node11" class="node"><title>0921</title>
+<ellipse fill="none" stroke="black" cx="650" cy="-2106" rx="50.1614" ry="18"></ellipse>
+<text text-anchor="middle" x="650" y="-2101.8" font-family="Times,serif" font-size="14.00">Dark cave</text>
+</g>
+<!-- 091c&#45;&gt;0921 -->
+<g id="edge12" class="edge"><title>091c-&gt;0921</title>
+<path fill="none" stroke="black" d="M576.813,-2178.5C584.91,-2167.66 596.186,-2153.41 607.449,-2142 611.753,-2137.64 616.568,-2133.27 621.369,-2129.17"></path>
+<polygon fill="black" stroke="black" points="623.87,-2131.64 629.34,-2122.57 619.406,-2126.25 623.87,-2131.64"></polygon>
+<text text-anchor="middle" x="622.776" y="-2146.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 0921&#45;&gt;0917 -->
+<g id="edge18" class="edge"><title>0921-&gt;0917</title>
+<path fill="none" stroke="black" d="M649.066,-2124.22C647.154,-2151.59 641.565,-2206.37 626,-2250 624.895,-2253.1 623.521,-2256.24 622.015,-2259.3"></path>
+<polygon fill="black" stroke="black" points="618.915,-2257.67 617.235,-2268.13 625.072,-2261.01 618.915,-2257.67"></polygon>
+<text text-anchor="middle" x="658.168" y="-2191.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 0926 -->
+<g id="node14" class="node"><title>0926</title>
+<ellipse fill="none" stroke="black" cx="709" cy="-2016" rx="58.2578" ry="18"></ellipse>
+<text text-anchor="middle" x="709" y="-2011.8" font-family="Times,serif" font-size="14.00">Rope bridge</text>
+</g>
+<!-- 0921&#45;&gt;0926 -->
+<g id="edge16" class="edge"><title>0921-&gt;0926</title>
+<path fill="none" stroke="black" d="M646.364,-2087.63C645.008,-2076.7 645.056,-2062.67 651.234,-2052 654.786,-2045.86 659.883,-2040.67 665.597,-2036.32"></path>
+<polygon fill="black" stroke="black" points="667.908,-2038.99 674.301,-2030.54 664.035,-2033.16 667.908,-2038.99"></polygon>
+<text text-anchor="middle" x="669.883" y="-2056.8" font-family="Times,serif" font-size="14.00">bridge</text>
+</g>
+<!-- 0926&#45;&gt;0921 -->
+<g id="edge22" class="edge"><title>0926-&gt;0921</title>
+<path fill="none" stroke="black" d="M703.934,-2034.15C700.247,-2045 694.574,-2059.01 687,-2070 684.065,-2074.26 680.54,-2078.4 676.846,-2082.25"></path>
+<polygon fill="black" stroke="black" points="674.369,-2079.78 669.649,-2089.27 679.254,-2084.79 674.369,-2079.78"></polygon>
+<text text-anchor="middle" x="710.215" y="-2056.8" font-family="Times,serif" font-size="14.00">back</text>
+</g>
+<!-- 092b -->
+<g id="node17" class="node"><title>092b</title>
+<ellipse fill="none" stroke="black" cx="709" cy="-1926" rx="100.323" ry="18"></ellipse>
+<text text-anchor="middle" x="709" y="-1921.8" font-family="Times,serif" font-size="14.00">Falling through the air!</text>
+</g>
+<!-- 0926&#45;&gt;092b -->
+<g id="edge20" class="edge"><title>0926-&gt;092b</title>
+<path fill="none" stroke="black" d="M709,-1997.61C709,-1985.24 709,-1968.37 709,-1954.22"></path>
+<polygon fill="black" stroke="black" points="712.5,-1954.05 709,-1944.05 705.5,-1954.05 712.5,-1954.05"></polygon>
+<text text-anchor="middle" x="733.105" y="-1966.8" font-family="Times,serif" font-size="14.00">continue</text>
+</g>
+<!-- 0930 -->
+<g id="node20" class="node"><title>0930</title>
+<ellipse fill="none" stroke="black" cx="709" cy="-1836" rx="60.1596" ry="18"></ellipse>
+<text text-anchor="middle" x="709" y="-1831.8" font-family="Times,serif" font-size="14.00">Moss cavern</text>
+</g>
+<!-- 092b&#45;&gt;0930 -->
+<g id="edge24" class="edge"><title>092b-&gt;0930</title>
+<path fill="none" stroke="black" d="M709,-1907.61C709,-1895.24 709,-1878.37 709,-1864.22"></path>
+<polygon fill="black" stroke="black" points="712.5,-1864.05 709,-1854.05 705.5,-1864.05 712.5,-1864.05"></polygon>
+<text text-anchor="middle" x="724.553" y="-1876.8" font-family="Times,serif" font-size="14.00">down</text>
+</g>
+<!-- 093a -->
+<g id="node22" class="node"><title>093a</title>
+<ellipse fill="none" stroke="black" cx="645" cy="-1746" rx="60.1596" ry="18"></ellipse>
+<text text-anchor="middle" x="645" y="-1741.8" font-family="Times,serif" font-size="14.00">Moss cavern</text>
+</g>
+<!-- 0930&#45;&gt;093a -->
+<g id="edge26" class="edge"><title>0930-&gt;093a</title>
+<path fill="none" stroke="black" d="M670.41,-1822.06C660.533,-1816.81 651.088,-1809.64 645.344,-1800 640.857,-1792.47 639.662,-1783.2 639.93,-1774.54"></path>
+<polygon fill="black" stroke="black" points="643.43,-1774.7 640.86,-1764.42 636.46,-1774.06 643.43,-1774.7"></polygon>
+<text text-anchor="middle" x="658.828" y="-1786.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 0935 -->
+<g id="node24" class="node"><title>0935</title>
+<ellipse fill="none" stroke="black" cx="783" cy="-1746" rx="60.1596" ry="18"></ellipse>
+<text text-anchor="middle" x="783" y="-1741.8" font-family="Times,serif" font-size="14.00">Moss cavern</text>
+</g>
+<!-- 0930&#45;&gt;0935 -->
+<g id="edge28" class="edge"><title>0930-&gt;0935</title>
+<path fill="none" stroke="black" d="M716.771,-1817.71C722.16,-1806.81 730.012,-1792.79 739.236,-1782 742.95,-1777.66 747.264,-1773.46 751.707,-1769.58"></path>
+<polygon fill="black" stroke="black" points="754.251,-1772.02 759.743,-1762.96 749.8,-1766.62 754.251,-1772.02"></polygon>
+<text text-anchor="middle" x="750.882" y="-1786.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 093a&#45;&gt;0930 -->
+<g id="edge30" class="edge"><title>093a-&gt;0930</title>
+<path fill="none" stroke="black" d="M657.489,-1763.69C661.792,-1769.47 666.627,-1776.01 671,-1782 677.608,-1791.05 684.788,-1801.03 691.109,-1809.86"></path>
+<polygon fill="black" stroke="black" points="688.431,-1812.14 697.092,-1818.24 694.127,-1808.07 688.431,-1812.14"></polygon>
+<text text-anchor="middle" x="694.882" y="-1786.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 093f -->
+<g id="node27" class="node"><title>093f</title>
+<ellipse fill="none" stroke="black" cx="695" cy="-1656" rx="41.4064" ry="18"></ellipse>
+<text text-anchor="middle" x="695" y="-1651.8" font-family="Times,serif" font-size="14.00">Passage</text>
+</g>
+<!-- 093a&#45;&gt;093f -->
+<g id="edge32" class="edge"><title>093a-&gt;093f</title>
+<path fill="none" stroke="black" d="M641.75,-1727.79C640.565,-1716.91 640.696,-1702.9 646.467,-1692 649.732,-1685.83 654.627,-1680.49 660.07,-1675.97"></path>
+<polygon fill="black" stroke="black" points="662.317,-1678.66 668.312,-1669.92 658.178,-1673.01 662.317,-1678.66"></polygon>
+<text text-anchor="middle" x="668.766" y="-1696.8" font-family="Times,serif" font-size="14.00">passage</text>
+</g>
+<!-- 0935&#45;&gt;0930 -->
+<g id="edge34" class="edge"><title>0935-&gt;0930</title>
+<path fill="none" stroke="black" d="M778.687,-1764.11C775.254,-1775.21 769.582,-1789.52 761,-1800 756.693,-1805.26 751.391,-1810.04 745.836,-1814.26"></path>
+<polygon fill="black" stroke="black" points="743.784,-1811.42 737.602,-1820.03 747.8,-1817.15 743.784,-1811.42"></polygon>
+<text text-anchor="middle" x="784.828" y="-1786.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 093f&#45;&gt;093a -->
+<g id="edge36" class="edge"><title>093f-&gt;093a</title>
+<path fill="none" stroke="black" d="M696.735,-1674.24C697.049,-1685.13 695.958,-1699.14 690,-1710 687.322,-1714.88 683.648,-1719.31 679.545,-1723.24"></path>
+<polygon fill="black" stroke="black" points="677.187,-1720.65 671.819,-1729.79 681.712,-1725.99 677.187,-1720.65"></polygon>
+<text text-anchor="middle" x="714.652" y="-1696.8" font-family="Times,serif" font-size="14.00">cavern</text>
+</g>
+<!-- 0949 -->
+<g id="node31" class="node"><title>0949</title>
+<ellipse fill="none" stroke="black" cx="558" cy="-1566" rx="74.0852" ry="18"></ellipse>
+<text text-anchor="middle" x="558" y="-1561.8" font-family="Times,serif" font-size="14.00">Twisty passages</text>
+</g>
+<!-- 093f&#45;&gt;0949 -->
+<g id="edge38" class="edge"><title>093f-&gt;0949</title>
+<path fill="none" stroke="black" d="M660.65,-1645.59C643.326,-1639.86 622.544,-1631.42 606.02,-1620 595.007,-1612.39 584.753,-1601.79 576.573,-1592.07"></path>
+<polygon fill="black" stroke="black" points="579.221,-1589.78 570.217,-1584.19 573.774,-1594.17 579.221,-1589.78"></polygon>
+<text text-anchor="middle" x="624.49" y="-1606.8" font-family="Times,serif" font-size="14.00">ladder</text>
+</g>
+<!-- 0944 -->
+<g id="node33" class="node"><title>0944</title>
+<ellipse fill="none" stroke="black" cx="824" cy="-1566" rx="41.4064" ry="18"></ellipse>
+<text text-anchor="middle" x="824" y="-1561.8" font-family="Times,serif" font-size="14.00">Passage</text>
+</g>
+<!-- 093f&#45;&gt;0944 -->
+<g id="edge40" class="edge"><title>093f-&gt;0944</title>
+<path fill="none" stroke="black" d="M709.898,-1638.8C720.822,-1627.54 736.412,-1612.7 752.021,-1602 762.409,-1594.88 774.463,-1588.42 785.701,-1583.04"></path>
+<polygon fill="black" stroke="black" points="787.29,-1586.16 794.894,-1578.78 784.349,-1579.8 787.29,-1586.16"></polygon>
+<text text-anchor="middle" x="777.49" y="-1606.8" font-family="Times,serif" font-size="14.00">darkness</text>
+</g>
+<!-- 0949&#45;&gt;093f -->
+<g id="edge42" class="edge"><title>0949-&gt;093f</title>
+<path fill="none" stroke="black" d="M599.67,-1581C613.401,-1586.53 628.375,-1593.59 641,-1602 653.078,-1610.04 664.787,-1621.01 674.197,-1630.89"></path>
+<polygon fill="black" stroke="black" points="671.861,-1633.52 681.214,-1638.5 677.006,-1628.77 671.861,-1633.52"></polygon>
+<text text-anchor="middle" x="680.49" y="-1606.8" font-family="Times,serif" font-size="14.00">ladder</text>
+</g>
+<!-- 094e -->
+<g id="node36" class="node"><title>094e</title>
+<ellipse fill="none" stroke="black" cx="275" cy="-1188" rx="74.0852" ry="18"></ellipse>
+<text text-anchor="middle" x="275" y="-1183.8" font-family="Times,serif" font-size="14.00">Twisty passages</text>
+</g>
+<!-- 0949&#45;&gt;094e -->
+<g id="edge44" class="edge"><title>0949-&gt;094e</title>
+<path fill="none" stroke="black" d="M488.552,-1559.68C352.932,-1548.37 66,-1519.41 66,-1477 66,-1477 66,-1477 66,-1277 66,-1219.69 133.586,-1199.1 191.891,-1192"></path>
+<polygon fill="black" stroke="black" points="192.344,-1195.47 201.902,-1190.9 191.579,-1188.52 192.344,-1195.47"></polygon>
+<text text-anchor="middle" x="80.7756" y="-1363.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 0953 -->
+<g id="node38" class="node"><title>0953</title>
+<ellipse fill="none" stroke="black" cx="502" cy="-1098" rx="74.0852" ry="18"></ellipse>
+<text text-anchor="middle" x="502" y="-1093.8" font-family="Times,serif" font-size="14.00">Twisty passages</text>
+</g>
+<!-- 0949&#45;&gt;0953 -->
+<g id="edge46" class="edge"><title>0949-&gt;0953</title>
+<path fill="none" stroke="black" d="M625.243,-1558.28C672.907,-1552.53 731.979,-1543.09 753,-1530 777.825,-1514.54 792,-1506.25 792,-1477 792,-1477 792,-1477 792,-1187 792,-1161.14 788.768,-1149.41 768,-1134 739.8,-1113.08 652.562,-1104.66 585.602,-1101.28"></path>
+<polygon fill="black" stroke="black" points="585.616,-1097.77 575.461,-1100.79 585.283,-1104.77 585.616,-1097.77"></polygon>
+<text text-anchor="middle" x="807.168" y="-1318.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 0958 -->
+<g id="node40" class="node"><title>0958</title>
+<ellipse fill="none" stroke="black" cx="578" cy="-1422" rx="74.0852" ry="18"></ellipse>
+<text text-anchor="middle" x="578" y="-1417.8" font-family="Times,serif" font-size="14.00">Twisty passages</text>
+</g>
+<!-- 0949&#45;&gt;0958 -->
+<g id="edge48" class="edge"><title>0949-&gt;0958</title>
+<path fill="none" stroke="black" d="M574.524,-1548.18C578.773,-1542.8 582.771,-1536.54 585,-1530 593.879,-1503.95 590.171,-1472.31 585.451,-1450.22"></path>
+<polygon fill="black" stroke="black" points="588.794,-1449.15 583.103,-1440.21 581.979,-1450.75 588.794,-1449.15"></polygon>
+<text text-anchor="middle" x="599.882" y="-1516.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 095d -->
+<g id="node42" class="node"><title>095d</title>
+<ellipse fill="none" stroke="black" cx="409" cy="-1476" rx="74.0852" ry="18"></ellipse>
+<text text-anchor="middle" x="409" y="-1471.8" font-family="Times,serif" font-size="14.00">Twisty passages</text>
+</g>
+<!-- 0949&#45;&gt;095d -->
+<g id="edge50" class="edge"><title>0949-&gt;095d</title>
+<path fill="none" stroke="black" d="M495.216,-1556.29C475.45,-1551.15 454.567,-1542.98 438.344,-1530 429.721,-1523.1 423.235,-1512.94 418.584,-1503.36"></path>
+<polygon fill="black" stroke="black" points="421.752,-1501.87 414.533,-1494.12 415.34,-1504.68 421.752,-1501.87"></polygon>
+<text text-anchor="middle" x="451.828" y="-1516.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 0944&#45;&gt;093f -->
+<g id="edge54" class="edge"><title>0944-&gt;093f</title>
+<path fill="none" stroke="black" d="M820.499,-1583.95C817.275,-1595.57 811.369,-1610.53 801,-1620 785.331,-1634.31 763.673,-1642.78 744.016,-1647.79"></path>
+<polygon fill="black" stroke="black" points="743.218,-1644.38 734.263,-1650.05 744.794,-1651.21 743.218,-1644.38"></polygon>
+<text text-anchor="middle" x="827.215" y="-1606.8" font-family="Times,serif" font-size="14.00">back</text>
+</g>
+<!-- 097b -->
+<g id="node44" class="node"><title>097b</title>
+<ellipse fill="none" stroke="black" cx="892" cy="-1476" rx="62.1726" ry="18"></ellipse>
+<text text-anchor="middle" x="892" y="-1471.8" font-family="Times,serif" font-size="14.00">Dark passage</text>
+</g>
+<!-- 0944&#45;&gt;097b -->
+<g id="edge52" class="edge"><title>0944-&gt;097b</title>
+<path fill="none" stroke="black" d="M820.433,-1547.98C819.058,-1536.91 819.148,-1522.61 825.79,-1512 830.057,-1505.18 836.13,-1499.61 842.885,-1495.09"></path>
+<polygon fill="black" stroke="black" points="844.869,-1497.98 851.723,-1489.9 841.327,-1491.95 844.869,-1497.98"></polygon>
+<text text-anchor="middle" x="850.105" y="-1516.8" font-family="Times,serif" font-size="14.00">continue</text>
+</g>
+<!-- 094e&#45;&gt;0949 -->
+<g id="edge58" class="edge"><title>094e-&gt;0949</title>
+<path fill="none" stroke="black" d="M204.457,-1193.51C164.887,-1197.93 115.323,-1206.68 74,-1224 36.6915,-1239.64 0,-1236.55 0,-1277 0,-1477 0,-1477 0,-1477 0,-1541.04 71.6345,-1515.43 134,-1530 249.713,-1557.03 387.441,-1563.91 473.815,-1565.29"></path>
+<polygon fill="black" stroke="black" points="473.781,-1568.79 483.829,-1565.43 473.878,-1561.79 473.781,-1568.79"></polygon>
+<text text-anchor="middle" x="15.1676" y="-1363.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 094e&#45;&gt;094e -->
+<g id="edge60" class="edge"><title>094e-&gt;094e</title>
+<path fill="none" stroke="black" d="M341.573,-1196.03C356.285,-1195.27 367,-1192.6 367,-1188 367,-1184.55 360.973,-1182.18 351.753,-1180.9"></path>
+<polygon fill="black" stroke="black" points="351.849,-1177.39 341.573,-1179.97 351.215,-1184.36 351.849,-1177.39"></polygon>
+<text text-anchor="middle" x="379.828" y="-1183.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 094e&#45;&gt;0953 -->
+<g id="edge56" class="edge"><title>094e-&gt;0953</title>
+<path fill="none" stroke="black" d="M304.155,-1171.28C325.882,-1159.97 356.5,-1144.85 384.449,-1134 403.382,-1126.65 424.524,-1119.92 443.601,-1114.37"></path>
+<polygon fill="black" stroke="black" points="444.714,-1117.69 453.366,-1111.57 442.789,-1110.96 444.714,-1117.69"></polygon>
+<text text-anchor="middle" x="399.776" y="-1138.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 0953&#45;&gt;0949 -->
+<g id="edge62" class="edge"><title>0953-&gt;0949</title>
+<path fill="none" stroke="black" d="M542.388,-1113.15C597.581,-1134.93 694.346,-1182.49 735,-1260 744.386,-1277.9 718.609,-1422.22 709,-1440 683.64,-1486.92 632.74,-1523.24 597.074,-1544.35"></path>
+<polygon fill="black" stroke="black" points="595.266,-1541.35 588.36,-1549.39 598.769,-1547.41 595.266,-1541.35"></polygon>
+<text text-anchor="middle" x="749.776" y="-1318.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 0953&#45;&gt;094e -->
+<g id="edge64" class="edge"><title>0953-&gt;094e</title>
+<path fill="none" stroke="black" d="M434.879,-1105.71C388.2,-1111.4 330.865,-1120.77 310.665,-1134 300.577,-1140.6 292.625,-1151.16 286.814,-1161.12"></path>
+<polygon fill="black" stroke="black" points="283.713,-1159.49 282.08,-1169.96 289.884,-1162.8 283.713,-1159.49"></polygon>
+<text text-anchor="middle" x="326.168" y="-1138.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 0953&#45;&gt;0953 -->
+<g id="edge66" class="edge"><title>0953-&gt;0953</title>
+<path fill="none" stroke="black" d="M568.573,-1106.03C583.285,-1105.27 594,-1102.6 594,-1098 594,-1094.55 587.973,-1092.18 578.753,-1090.9"></path>
+<polygon fill="black" stroke="black" points="578.849,-1087.39 568.573,-1089.97 578.215,-1094.36 578.849,-1087.39"></polygon>
+<text text-anchor="middle" x="604.882" y="-1093.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 0958&#45;&gt;0949 -->
+<g id="edge72" class="edge"><title>0958-&gt;0949</title>
+<path fill="none" stroke="black" d="M572.274,-1440.15C566.673,-1457.89 558.535,-1486.53 555.344,-1512 554.349,-1519.94 555.041,-1522.01 555.344,-1530 555.441,-1532.56 555.577,-1535.22 555.738,-1537.88"></path>
+<polygon fill="black" stroke="black" points="552.251,-1538.19 556.444,-1547.92 559.234,-1537.7 552.251,-1538.19"></polygon>
+<text text-anchor="middle" x="568.828" y="-1516.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 0958&#45;&gt;0958 -->
+<g id="edge70" class="edge"><title>0958-&gt;0958</title>
+<path fill="none" stroke="black" d="M639.482,-1432.07C656.747,-1431.63 670,-1428.28 670,-1422 670,-1417.05 661.748,-1413.91 649.785,-1412.59"></path>
+<polygon fill="black" stroke="black" points="649.688,-1409.08 639.482,-1411.93 649.234,-1416.07 649.688,-1409.08"></polygon>
+<text text-anchor="middle" x="685.168" y="-1417.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 0967 -->
+<g id="node53" class="node"><title>0967</title>
+<ellipse fill="none" stroke="black" cx="604" cy="-1278" rx="74.0852" ry="18"></ellipse>
+<text text-anchor="middle" x="604" y="-1273.8" font-family="Times,serif" font-size="14.00">Twisty passages</text>
+</g>
+<!-- 0958&#45;&gt;0967 -->
+<g id="edge68" class="edge"><title>0958-&gt;0967</title>
+<path fill="none" stroke="black" d="M581.136,-1403.87C585.567,-1379.67 593.708,-1335.21 598.984,-1306.39"></path>
+<polygon fill="black" stroke="black" points="602.494,-1306.66 600.853,-1296.19 595.609,-1305.4 602.494,-1306.66"></polygon>
+<text text-anchor="middle" x="605.776" y="-1363.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 0976 -->
+<g id="node57" class="node"><title>0976</title>
+<ellipse fill="none" stroke="black" cx="400" cy="-1278" rx="74.0852" ry="18"></ellipse>
+<text text-anchor="middle" x="400" y="-1273.8" font-family="Times,serif" font-size="14.00">Twisty passages</text>
+</g>
+<!-- 0958&#45;&gt;0976 -->
+<g id="edge74" class="edge"><title>0958-&gt;0976</title>
+<path fill="none" stroke="black" d="M557.233,-1404.43C525.48,-1379.1 464.767,-1330.67 428.785,-1301.96"></path>
+<polygon fill="black" stroke="black" points="430.635,-1298.96 420.635,-1295.46 426.27,-1304.43 430.635,-1298.96"></polygon>
+<text text-anchor="middle" x="543.882" y="-1363.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 095d&#45;&gt;0949 -->
+<g id="edge80" class="edge"><title>095d-&gt;0949</title>
+<path fill="none" stroke="black" d="M435.782,-1492.82C459.979,-1507.11 495.773,-1528.25 522.377,-1543.96"></path>
+<polygon fill="black" stroke="black" points="520.627,-1546.99 531.017,-1549.06 524.187,-1540.96 520.627,-1546.99"></polygon>
+<text text-anchor="middle" x="507.882" y="-1516.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 095d&#45;&gt;095d -->
+<g id="edge76" class="edge"><title>095d-&gt;095d</title>
+<path fill="none" stroke="black" d="M475.573,-1484.03C490.285,-1483.27 501,-1480.6 501,-1476 501,-1472.55 494.973,-1470.18 485.753,-1468.9"></path>
+<polygon fill="black" stroke="black" points="485.849,-1465.39 475.573,-1467.97 485.215,-1472.36 485.849,-1465.39"></polygon>
+<text text-anchor="middle" x="515.776" y="-1471.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 0962 -->
+<g id="node60" class="node"><title>0962</title>
+<ellipse fill="none" stroke="black" cx="400" cy="-1368" rx="74.0852" ry="18"></ellipse>
+<text text-anchor="middle" x="400" y="-1363.8" font-family="Times,serif" font-size="14.00">Twisty passages</text>
+</g>
+<!-- 095d&#45;&gt;0962 -->
+<g id="edge78" class="edge"><title>095d-&gt;0962</title>
+<path fill="none" stroke="black" d="M407.554,-1457.97C406.145,-1441.38 403.981,-1415.88 402.329,-1396.43"></path>
+<polygon fill="black" stroke="black" points="405.806,-1396.01 401.472,-1386.34 398.831,-1396.6 405.806,-1396.01"></polygon>
+<text text-anchor="middle" x="421.168" y="-1417.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 097b&#45;&gt;0944 -->
+<g id="edge84" class="edge"><title>097b-&gt;0944</title>
+<path fill="none" stroke="black" d="M889.071,-1494.05C886.516,-1505.13 881.932,-1519.43 874,-1530 869.54,-1535.94 863.772,-1541.26 857.747,-1545.84"></path>
+<polygon fill="black" stroke="black" points="855.66,-1543.03 849.47,-1551.63 859.671,-1548.76 855.66,-1543.03"></polygon>
+<text text-anchor="middle" x="894.882" y="-1516.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 0980 -->
+<g id="node63" class="node"><title>0980</title>
+<ellipse fill="none" stroke="black" cx="886" cy="-1368" rx="62.1726" ry="18"></ellipse>
+<text text-anchor="middle" x="886" y="-1363.8" font-family="Times,serif" font-size="14.00">Dark passage</text>
+</g>
+<!-- 097b&#45;&gt;0980 -->
+<g id="edge82" class="edge"><title>097b-&gt;0980</title>
+<path fill="none" stroke="black" d="M862.638,-1459.98C855.33,-1454.71 848.424,-1448.06 844.344,-1440 837.116,-1425.73 837.586,-1418.5 844.344,-1404 846.428,-1399.53 849.397,-1395.42 852.802,-1391.72"></path>
+<polygon fill="black" stroke="black" points="855.377,-1394.1 860.262,-1384.7 850.58,-1389 855.377,-1394.1"></polygon>
+<text text-anchor="middle" x="857.828" y="-1417.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 0967&#45;&gt;094e -->
+<g id="edge88" class="edge"><title>0967-&gt;094e</title>
+<path fill="none" stroke="black" d="M551.909,-1265.1C524.041,-1258.59 489.183,-1250.19 458.236,-1242 414.78,-1230.5 365.892,-1216.3 329.549,-1205.49"></path>
+<polygon fill="black" stroke="black" points="330.23,-1202.04 319.647,-1202.54 328.229,-1208.75 330.23,-1202.04"></polygon>
+<text text-anchor="middle" x="469.882" y="-1228.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 0967&#45;&gt;0953 -->
+<g id="edge86" class="edge"><title>0967-&gt;0953</title>
+<path fill="none" stroke="black" d="M594.22,-1259.93C576.247,-1228.57 537.873,-1161.6 516.731,-1124.71"></path>
+<polygon fill="black" stroke="black" points="519.759,-1122.95 511.751,-1116.02 513.686,-1126.43 519.759,-1122.95"></polygon>
+<text text-anchor="middle" x="578.776" y="-1183.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 0967&#45;&gt;0967 -->
+<g id="edge90" class="edge"><title>0967-&gt;0967</title>
+<path fill="none" stroke="black" d="M670.573,-1286.03C685.285,-1285.27 696,-1282.6 696,-1278 696,-1274.55 689.973,-1272.18 680.753,-1270.9"></path>
+<polygon fill="black" stroke="black" points="680.849,-1267.39 670.573,-1269.97 680.215,-1274.36 680.849,-1267.39"></polygon>
+<text text-anchor="middle" x="711.168" y="-1273.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 0976&#45;&gt;094e -->
+<g id="edge94" class="edge"><title>0976-&gt;094e</title>
+<path fill="none" stroke="black" d="M377.073,-1260.86C357.287,-1246.93 328.511,-1226.67 306.552,-1211.21"></path>
+<polygon fill="black" stroke="black" points="308.397,-1208.23 298.205,-1205.34 304.367,-1213.95 308.397,-1208.23"></polygon>
+<text text-anchor="middle" x="364.168" y="-1228.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 0976&#45;&gt;0953 -->
+<g id="edge92" class="edge"><title>0976-&gt;0953</title>
+<path fill="none" stroke="black" d="M409.051,-1259.8C420.321,-1238.54 440.304,-1201.32 458.449,-1170 467.225,-1154.85 477.44,-1138.15 485.77,-1124.76"></path>
+<polygon fill="black" stroke="black" points="488.867,-1126.41 491.196,-1116.07 482.93,-1122.7 488.867,-1126.41"></polygon>
+<text text-anchor="middle" x="473.776" y="-1183.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 0962&#45;&gt;094e -->
+<g id="edge98" class="edge"><title>0962-&gt;094e</title>
+<path fill="none" stroke="black" d="M360.25,-1352.71C334.828,-1341.39 303.558,-1322.95 286.665,-1296 271.672,-1272.08 270.313,-1239.13 271.717,-1216.14"></path>
+<polygon fill="black" stroke="black" points="275.216,-1216.29 272.548,-1206.04 268.239,-1215.71 275.216,-1216.29"></polygon>
+<text text-anchor="middle" x="302.168" y="-1273.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 0962&#45;&gt;0953 -->
+<g id="edge100" class="edge"><title>0962-&gt;0953</title>
+<path fill="none" stroke="black" d="M427.73,-1351.25C446.736,-1338.85 470.661,-1319.72 483,-1296 511.613,-1240.99 509.328,-1165.65 505.488,-1125.97"></path>
+<polygon fill="black" stroke="black" points="508.965,-1125.57 504.415,-1116 502.005,-1126.32 508.965,-1125.57"></polygon>
+<text text-anchor="middle" x="517.828" y="-1228.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 0962&#45;&gt;0976 -->
+<g id="edge102" class="edge"><title>0962-&gt;0976</title>
+<path fill="none" stroke="black" d="M400,-1349.61C400,-1337.24 400,-1320.37 400,-1306.22"></path>
+<polygon fill="black" stroke="black" points="403.5,-1306.05 400,-1296.05 396.5,-1306.05 403.5,-1306.05"></polygon>
+<text text-anchor="middle" x="410.882" y="-1318.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 096c -->
+<g id="node71" class="node"><title>096c</title>
+<ellipse fill="none" stroke="black" cx="168" cy="-1278" rx="74.0852" ry="18"></ellipse>
+<text text-anchor="middle" x="168" y="-1273.8" font-family="Times,serif" font-size="14.00">Twisty passages</text>
+</g>
+<!-- 0962&#45;&gt;096c -->
+<g id="edge96" class="edge"><title>0962-&gt;096c</title>
+<path fill="none" stroke="black" d="M333.27,-1360.09C302.149,-1355.09 265.268,-1346.54 234.449,-1332 218.943,-1324.68 203.824,-1313.09 191.935,-1302.61"></path>
+<polygon fill="black" stroke="black" points="194.001,-1299.76 184.256,-1295.6 189.281,-1304.93 194.001,-1299.76"></polygon>
+<text text-anchor="middle" x="249.776" y="-1318.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 0980&#45;&gt;097b -->
+<g id="edge104" class="edge"><title>0980-&gt;097b</title>
+<path fill="none" stroke="black" d="M886.982,-1386.34C887.927,-1403.04 889.371,-1428.55 890.468,-1447.93"></path>
+<polygon fill="black" stroke="black" points="886.976,-1448.18 891.036,-1457.97 893.965,-1447.79 886.976,-1448.18"></polygon>
+<text text-anchor="middle" x="900.882" y="-1417.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 0985 -->
+<g id="node77" class="node"><title>0985</title>
+<ellipse fill="none" stroke="black" cx="890" cy="-1278" rx="62.1726" ry="18"></ellipse>
+<text text-anchor="middle" x="890" y="-1273.8" font-family="Times,serif" font-size="14.00">Dark passage</text>
+</g>
+<!-- 0980&#45;&gt;0985 -->
+<g id="edge106" class="edge"><title>0980-&gt;0985</title>
+<path fill="none" stroke="black" d="M866.673,-1350.62C861.693,-1345.25 856.994,-1338.88 854.344,-1332 851.468,-1324.53 851.248,-1321.38 854.344,-1314 856.043,-1309.95 858.465,-1306.13 861.256,-1302.62"></path>
+<polygon fill="black" stroke="black" points="864.083,-1304.71 868.277,-1294.98 858.931,-1299.97 864.083,-1304.71"></polygon>
+<text text-anchor="middle" x="867.828" y="-1318.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 096c&#45;&gt;0949 -->
+<g id="edge108" class="edge"><title>096c-&gt;0949</title>
+<path fill="none" stroke="black" d="M176.133,-1296.17C196.048,-1336.45 251.148,-1437.85 326,-1494 371.867,-1528.41 434.551,-1546.3 483.199,-1555.51"></path>
+<polygon fill="black" stroke="black" points="482.58,-1558.95 493.044,-1557.29 483.828,-1552.06 482.58,-1558.95"></polygon>
+<text text-anchor="middle" x="280.828" y="-1417.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 0985&#45;&gt;0980 -->
+<g id="edge110" class="edge"><title>0985-&gt;0980</title>
+<path fill="none" stroke="black" d="M889.225,-1296.05C888.666,-1308.34 887.9,-1325.2 887.255,-1339.39"></path>
+<polygon fill="black" stroke="black" points="883.748,-1339.47 886.79,-1349.61 890.741,-1339.78 883.748,-1339.47"></polygon>
+<text text-anchor="middle" x="899.882" y="-1318.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 098a -->
+<g id="node81" class="node"><title>098a</title>
+<ellipse fill="none" stroke="black" cx="890" cy="-1188" rx="62.1726" ry="18"></ellipse>
+<text text-anchor="middle" x="890" y="-1183.8" font-family="Times,serif" font-size="14.00">Dark passage</text>
+</g>
+<!-- 0985&#45;&gt;098a -->
+<g id="edge112" class="edge"><title>0985-&gt;098a</title>
+<path fill="none" stroke="black" d="M873.963,-1260.51C869.665,-1255.05 865.59,-1248.66 863.344,-1242 860.786,-1234.42 860.786,-1231.58 863.344,-1224 864.537,-1220.46 866.247,-1217 868.231,-1213.71"></path>
+<polygon fill="black" stroke="black" points="871.116,-1215.7 873.963,-1205.49 865.374,-1211.69 871.116,-1215.7"></polygon>
+<text text-anchor="middle" x="876.828" y="-1228.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 098a&#45;&gt;0985 -->
+<g id="edge114" class="edge"><title>098a-&gt;0985</title>
+<path fill="none" stroke="black" d="M890,-1206.05C890,-1218.34 890,-1235.2 890,-1249.39"></path>
+<polygon fill="black" stroke="black" points="886.5,-1249.61 890,-1259.61 893.5,-1249.61 886.5,-1249.61"></polygon>
+<text text-anchor="middle" x="900.882" y="-1228.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 098f -->
+<g id="node84" class="node"><title>098f</title>
+<ellipse fill="none" stroke="black" cx="844" cy="-1098" rx="33.3589" ry="18"></ellipse>
+<text text-anchor="middle" x="844" y="-1093.8" font-family="Times,serif" font-size="14.00">Ruins</text>
+</g>
+<!-- 098a&#45;&gt;098f -->
+<g id="edge116" class="edge"><title>098a-&gt;098f</title>
+<path fill="none" stroke="black" d="M861.877,-1171.73C854.877,-1166.46 848.258,-1159.87 844.344,-1152 840.439,-1144.15 839.393,-1134.8 839.619,-1126.16"></path>
+<polygon fill="black" stroke="black" points="843.114,-1126.36 840.418,-1116.12 836.136,-1125.81 843.114,-1126.36"></polygon>
+<text text-anchor="middle" x="857.828" y="-1138.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 098f&#45;&gt;098a -->
+<g id="edge118" class="edge"><title>098f-&gt;098a</title>
+<path fill="none" stroke="black" d="M857.156,-1114.75C861.611,-1120.56 866.372,-1127.36 870,-1134 874.472,-1142.19 878.377,-1151.59 881.52,-1160.17"></path>
+<polygon fill="black" stroke="black" points="878.262,-1161.46 884.848,-1169.76 884.875,-1159.17 878.262,-1161.46"></polygon>
+<text text-anchor="middle" x="888.882" y="-1138.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 0994 -->
+<g id="node87" class="node"><title>0994</title>
+<ellipse fill="none" stroke="black" cx="845" cy="-1008" rx="33.3589" ry="18"></ellipse>
+<text text-anchor="middle" x="845" y="-1003.8" font-family="Times,serif" font-size="14.00">Ruins</text>
+</g>
+<!-- 098f&#45;&gt;0994 -->
+<g id="edge120" class="edge"><title>098f-&gt;0994</title>
+<path fill="none" stroke="black" d="M834.342,-1080.45C831.543,-1074.79 828.862,-1068.3 827.449,-1062 825.696,-1054.19 825.606,-1051.78 827.449,-1044 828.177,-1040.92 829.219,-1037.81 830.438,-1034.78"></path>
+<polygon fill="black" stroke="black" points="833.716,-1036.03 834.763,-1025.48 827.37,-1033.07 833.716,-1036.03"></polygon>
+<text text-anchor="middle" x="842.776" y="-1048.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 0994&#45;&gt;098f -->
+<g id="edge124" class="edge"><title>0994-&gt;098f</title>
+<path fill="none" stroke="black" d="M852.015,-1025.8C854.045,-1031.47 855.986,-1037.92 857,-1044 858.315,-1051.89 858.415,-1054.13 857,-1062 856.484,-1064.87 855.748,-1067.81 854.885,-1070.72"></path>
+<polygon fill="black" stroke="black" points="851.547,-1069.66 851.597,-1080.25 858.165,-1071.94 851.547,-1069.66"></polygon>
+<text text-anchor="middle" x="874.168" y="-1048.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 0999 -->
+<g id="node89" class="node"><title>0999</title>
+<ellipse fill="none" stroke="black" cx="846" cy="-918" rx="33.3589" ry="18"></ellipse>
+<text text-anchor="middle" x="846" y="-913.8" font-family="Times,serif" font-size="14.00">Ruins</text>
+</g>
+<!-- 0994&#45;&gt;0999 -->
+<g id="edge122" class="edge"><title>0994-&gt;0999</title>
+<path fill="none" stroke="black" d="M840.263,-989.839C837.974,-979.476 836.005,-965.996 837.449,-954 837.774,-951.299 838.236,-948.505 838.778,-945.728"></path>
+<polygon fill="black" stroke="black" points="842.199,-946.465 840.996,-935.939 835.372,-944.919 842.199,-946.465"></polygon>
+<text text-anchor="middle" x="852.776" y="-958.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 0999&#45;&gt;0994 -->
+<g id="edge128" class="edge"><title>0999-&gt;0994</title>
+<path fill="none" stroke="black" d="M858.005,-934.892C861.634,-940.61 865.146,-947.307 867,-954 869.135,-961.71 869.215,-964.313 867,-972 865.996,-975.485 864.531,-978.958 862.826,-982.287"></path>
+<polygon fill="black" stroke="black" points="859.643,-980.794 857.571,-991.184 865.67,-984.354 859.643,-980.794"></polygon>
+<text text-anchor="middle" x="884.168" y="-958.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 099f -->
+<g id="node92" class="node"><title>099f</title>
+<ellipse fill="none" stroke="black" cx="708" cy="-828" rx="33.3589" ry="18"></ellipse>
+<text text-anchor="middle" x="708" y="-823.8" font-family="Times,serif" font-size="14.00">Ruins</text>
+</g>
+<!-- 0999&#45;&gt;099f -->
+<g id="edge126" class="edge"><title>0999-&gt;099f</title>
+<path fill="none" stroke="black" d="M813.302,-913.905C774.27,-909.456 712.49,-899.762 698.449,-882 692.487,-874.459 692.855,-864.427 695.429,-855.121"></path>
+<polygon fill="black" stroke="black" points="698.813,-856.054 698.894,-845.459 692.224,-853.691 698.813,-856.054"></polygon>
+<text text-anchor="middle" x="713.776" y="-868.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 09a4 -->
+<g id="node95" class="node"><title>09a4</title>
+<ellipse fill="none" stroke="black" cx="814" cy="-828" rx="33.3589" ry="18"></ellipse>
+<text text-anchor="middle" x="814" y="-823.8" font-family="Times,serif" font-size="14.00">Ruins</text>
+</g>
+<!-- 0999&#45;&gt;09a4 -->
+<g id="edge130" class="edge"><title>0999-&gt;09a4</title>
+<path fill="none" stroke="black" d="M824.155,-904.392C816.366,-898.649 808.476,-891.087 804.236,-882 800.425,-873.834 800.863,-864.311 802.893,-855.608"></path>
+<polygon fill="black" stroke="black" points="806.285,-856.483 805.848,-845.897 799.589,-854.445 806.285,-856.483"></polygon>
+<text text-anchor="middle" x="815.882" y="-868.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 09ae -->
+<g id="node97" class="node"><title>09ae</title>
+<ellipse fill="none" stroke="black" cx="918" cy="-828" rx="33.3589" ry="18"></ellipse>
+<text text-anchor="middle" x="918" y="-823.8" font-family="Times,serif" font-size="14.00">Ruins</text>
+</g>
+<!-- 0999&#45;&gt;09ae -->
+<g id="edge132" class="edge"><title>0999-&gt;09ae</title>
+<path fill="none" stroke="black" d="M858.872,-901.267C869.862,-887.836 885.837,-868.31 898.413,-852.94"></path>
+<polygon fill="black" stroke="black" points="901.373,-854.849 904.997,-844.893 895.955,-850.416 901.373,-854.849"></polygon>
+<text text-anchor="middle" x="901.828" y="-868.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 099f&#45;&gt;0999 -->
+<g id="edge134" class="edge"><title>099f-&gt;0999</title>
+<path fill="none" stroke="black" d="M722.643,-844.344C734.12,-855.762 750.903,-871.179 767.665,-882 780.555,-890.321 795.753,-897.612 809.316,-903.355"></path>
+<polygon fill="black" stroke="black" points="808.266,-906.707 818.846,-907.256 810.917,-900.229 808.266,-906.707"></polygon>
+<text text-anchor="middle" x="783.168" y="-868.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 09a4&#45;&gt;0999 -->
+<g id="edge138" class="edge"><title>09a4-&gt;0999</title>
+<path fill="none" stroke="black" d="M820.151,-845.915C824.75,-858.563 831.126,-876.097 836.395,-890.586"></path>
+<polygon fill="black" stroke="black" points="833.123,-891.831 839.83,-900.033 839.702,-889.439 833.123,-891.831"></polygon>
+<text text-anchor="middle" x="845.828" y="-868.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 09a9 -->
+<g id="node100" class="node"><title>09a9</title>
+<ellipse fill="none" stroke="black" cx="823" cy="-738" rx="33.3589" ry="18"></ellipse>
+<text text-anchor="middle" x="823" y="-733.8" font-family="Times,serif" font-size="14.00">Ruins</text>
+</g>
+<!-- 09a4&#45;&gt;09a9 -->
+<g id="edge136" class="edge"><title>09a4-&gt;09a9</title>
+<path fill="none" stroke="black" d="M807.609,-810.17C804.492,-799.691 801.979,-785.974 804.893,-774 805.646,-770.909 806.722,-767.786 807.98,-764.745"></path>
+<polygon fill="black" stroke="black" points="811.271,-765.977 812.442,-755.447 804.96,-762.948 811.271,-765.977"></polygon>
+<text text-anchor="middle" x="820.553" y="-778.8" font-family="Times,serif" font-size="14.00">down</text>
+</g>
+<!-- 09ae&#45;&gt;0999 -->
+<g id="edge142" class="edge"><title>09ae-&gt;0999</title>
+<path fill="none" stroke="black" d="M922.376,-846.026C924.223,-857.097 924.638,-871.392 918,-882 910.715,-893.642 898.326,-901.511 885.86,-906.786"></path>
+<polygon fill="black" stroke="black" points="884.531,-903.546 876.395,-910.333 886.987,-910.101 884.531,-903.546"></polygon>
+<text text-anchor="middle" x="934.882" y="-868.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 09b3 -->
+<g id="node103" class="node"><title>09b3</title>
+<ellipse fill="none" stroke="black" cx="931" cy="-738" rx="33.3589" ry="18"></ellipse>
+<text text-anchor="middle" x="931" y="-733.8" font-family="Times,serif" font-size="14.00">Ruins</text>
+</g>
+<!-- 09ae&#45;&gt;09b3 -->
+<g id="edge140" class="edge"><title>09ae-&gt;09b3</title>
+<path fill="none" stroke="black" d="M908.137,-810.6C903.067,-800.046 898.758,-786.092 903,-774 904.449,-769.87 906.613,-765.865 909.108,-762.129"></path>
+<polygon fill="black" stroke="black" points="912.053,-764.04 915.349,-753.97 906.493,-759.786 912.053,-764.04"></polygon>
+<text text-anchor="middle" x="910" y="-778.8" font-family="Times,serif" font-size="14.00">up</text>
+</g>
+<!-- 09a9&#45;&gt;09a4 -->
+<g id="edge144" class="edge"><title>09a9-&gt;09a4</title>
+<path fill="none" stroke="black" d="M831.633,-755.8C835.899,-766.268 839.463,-779.983 836,-792 834.996,-795.485 833.531,-798.958 831.826,-802.287"></path>
+<polygon fill="black" stroke="black" points="828.643,-800.794 826.571,-811.184 834.67,-804.354 828.643,-800.794"></polygon>
+<text text-anchor="middle" x="845" y="-778.8" font-family="Times,serif" font-size="14.00">up</text>
+</g>
+<!-- 09b3&#45;&gt;09ae -->
+<g id="edge146" class="edge"><title>09b3-&gt;09ae</title>
+<path fill="none" stroke="black" d="M928.457,-756.215C926.625,-768.615 924.117,-785.595 922.016,-799.817"></path>
+<polygon fill="black" stroke="black" points="918.506,-799.629 920.507,-810.033 925.43,-800.652 918.506,-799.629"></polygon>
+<text text-anchor="middle" x="941.553" y="-778.8" font-family="Times,serif" font-size="14.00">down</text>
+</g>
+<!-- 09b8 -->
+<g id="node107" class="node"><title>09b8</title>
+<ellipse fill="none" stroke="black" cx="901" cy="-2376" rx="96.3476" ry="18"></ellipse>
+<text text-anchor="middle" x="901" y="-2371.8" font-family="Times,serif" font-size="14.00">Synacor Headquarters</text>
+</g>
+<!-- 09bd -->
+<g id="node109" class="node"><title>09bd</title>
+<ellipse fill="none" stroke="black" cx="897" cy="-2286" rx="96.3476" ry="18"></ellipse>
+<text text-anchor="middle" x="897" y="-2281.8" font-family="Times,serif" font-size="14.00">Synacor Headquarters</text>
+</g>
+<!-- 09b8&#45;&gt;09bd -->
+<g id="edge148" class="edge"><title>09b8-&gt;09bd</title>
+<path fill="none" stroke="black" d="M882.085,-2358.14C877.415,-2352.85 873.042,-2346.64 870.56,-2340 867.757,-2332.51 868.017,-2329.59 870.56,-2322 871.683,-2318.65 873.268,-2315.36 875.11,-2312.23"></path>
+<polygon fill="black" stroke="black" points="878.07,-2314.1 880.814,-2303.87 872.287,-2310.16 878.07,-2314.1"></polygon>
+<text text-anchor="middle" x="891.22" y="-2326.8" font-family="Times,serif" font-size="14.00">outside</text>
+</g>
+<!-- 09bd&#45;&gt;09b8 -->
+<g id="edge150" class="edge"><title>09bd-&gt;09b8</title>
+<path fill="none" stroke="black" d="M905.326,-2304.05C907.64,-2309.64 909.837,-2315.96 911,-2322 912.619,-2330.4 911.806,-2339.56 910.093,-2347.87"></path>
+<polygon fill="black" stroke="black" points="906.638,-2347.25 907.556,-2357.81 913.42,-2348.98 906.638,-2347.25"></polygon>
+<text text-anchor="middle" x="928.72" y="-2326.8" font-family="Times,serif" font-size="14.00">inside</text>
+</g>
+<!-- 09c2 -->
+<g id="node111" class="node"><title>09c2</title>
+<ellipse fill="none" stroke="black" cx="1148" cy="-2376" rx="35.2484" ry="18"></ellipse>
+<text text-anchor="middle" x="1148" y="-2371.8" font-family="Times,serif" font-size="14.00">Beach</text>
+</g>
+<!-- 09c7 -->
+<g id="node113" class="node"><title>09c7</title>
+<ellipse fill="none" stroke="black" cx="1215" cy="-2286" rx="35.2484" ry="18"></ellipse>
+<text text-anchor="middle" x="1215" y="-2281.8" font-family="Times,serif" font-size="14.00">Beach</text>
+</g>
+<!-- 09c2&#45;&gt;09c7 -->
+<g id="edge152" class="edge"><title>09c2-&gt;09c7</title>
+<path fill="none" stroke="black" d="M1151.1,-2357.98C1153.75,-2346.91 1158.43,-2332.62 1166.34,-2322 1170.96,-2315.8 1176.99,-2310.26 1183.23,-2305.51"></path>
+<polygon fill="black" stroke="black" points="1185.57,-2308.14 1191.75,-2299.53 1181.55,-2302.41 1185.57,-2308.14"></polygon>
+<text text-anchor="middle" x="1179.83" y="-2326.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 09cc -->
+<g id="node115" class="node"><title>09cc</title>
+<ellipse fill="none" stroke="black" cx="1104" cy="-2016" rx="35.2484" ry="18"></ellipse>
+<text text-anchor="middle" x="1104" y="-2011.8" font-family="Times,serif" font-size="14.00">Beach</text>
+</g>
+<!-- 09c2&#45;&gt;09cc -->
+<g id="edge154" class="edge"><title>09c2-&gt;09cc</title>
+<path fill="none" stroke="black" d="M1117.41,-2367.05C1081.86,-2355.74 1028,-2331.31 1028,-2287 1028,-2287 1028,-2287 1028,-2105 1028,-2075.9 1052.09,-2051.67 1073.15,-2036.06"></path>
+<polygon fill="black" stroke="black" points="1075.45,-2038.72 1081.61,-2030.1 1071.42,-2032.99 1075.45,-2038.72"></polygon>
+<text text-anchor="middle" x="1038.88" y="-2191.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 09d1 -->
+<g id="node117" class="node"><title>09d1</title>
+<ellipse fill="none" stroke="black" cx="1229" cy="-2196" rx="69.1427" ry="18"></ellipse>
+<text text-anchor="middle" x="1229" y="-2191.8" font-family="Times,serif" font-size="14.00">Tropical Island</text>
+</g>
+<!-- 09c2&#45;&gt;09d1 -->
+<g id="edge156" class="edge"><title>09c2-&gt;09d1</title>
+<path fill="none" stroke="black" d="M1142.13,-2358.1C1135.55,-2336.16 1127.52,-2297.23 1141.45,-2268 1151.58,-2246.75 1171.52,-2229.79 1189.82,-2217.78"></path>
+<polygon fill="black" stroke="black" points="1191.99,-2220.55 1198.62,-2212.29 1188.29,-2214.61 1191.99,-2220.55"></polygon>
+<text text-anchor="middle" x="1156.78" y="-2281.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 09c7&#45;&gt;09c2 -->
+<g id="edge158" class="edge"><title>09c7-&gt;09c2</title>
+<path fill="none" stroke="black" d="M1210.05,-2303.88C1206.27,-2314.89 1200.3,-2329.17 1192,-2340 1187.77,-2345.52 1182.49,-2350.67 1177.07,-2355.24"></path>
+<polygon fill="black" stroke="black" points="1174.82,-2352.55 1169.13,-2361.49 1179.15,-2358.05 1174.82,-2352.55"></polygon>
+<text text-anchor="middle" x="1213.88" y="-2326.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 09c7&#45;&gt;09d1 -->
+<g id="edge160" class="edge"><title>09c7-&gt;09d1</title>
+<path fill="none" stroke="black" d="M1217.7,-2268.03C1219.66,-2255.69 1222.36,-2238.73 1224.63,-2224.47"></path>
+<polygon fill="black" stroke="black" points="1228.15,-2224.64 1226.26,-2214.22 1221.23,-2223.54 1228.15,-2224.64"></polygon>
+<text text-anchor="middle" x="1238.78" y="-2236.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 09cc&#45;&gt;09c2 -->
+<g id="edge162" class="edge"><title>09cc-&gt;09c2</title>
+<path fill="none" stroke="black" d="M1098.4,-2033.99C1093.12,-2051.56 1086,-2079.89 1086,-2105 1086,-2287 1086,-2287 1086,-2287 1086,-2313.42 1104.9,-2337.49 1121.83,-2353.75"></path>
+<polygon fill="black" stroke="black" points="1119.65,-2356.5 1129.4,-2360.66 1124.37,-2351.33 1119.65,-2356.5"></polygon>
+<text text-anchor="middle" x="1098.83" y="-2191.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 09d6 -->
+<g id="node122" class="node"><title>09d6</title>
+<ellipse fill="none" stroke="black" cx="1184" cy="-2106" rx="69.1427" ry="18"></ellipse>
+<text text-anchor="middle" x="1184" y="-2101.8" font-family="Times,serif" font-size="14.00">Tropical Island</text>
+</g>
+<!-- 09cc&#45;&gt;09d6 -->
+<g id="edge164" class="edge"><title>09cc-&gt;09d6</title>
+<path fill="none" stroke="black" d="M1127.64,-2029.48C1137.27,-2035.38 1148,-2043.1 1156,-2052 1163.02,-2059.81 1168.86,-2069.7 1173.36,-2078.82"></path>
+<polygon fill="black" stroke="black" points="1170.18,-2080.3 1177.55,-2087.92 1176.54,-2077.37 1170.18,-2080.3"></polygon>
+<text text-anchor="middle" x="1183.78" y="-2056.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 09d1&#45;&gt;09c2 -->
+<g id="edge168" class="edge"><title>09d1-&gt;09c2</title>
+<path fill="none" stroke="black" d="M1245.9,-2213.81C1250.3,-2219.19 1254.5,-2225.46 1257,-2232 1268.43,-2261.9 1270.14,-2273.99 1259,-2304 1247.73,-2334.37 1214.96,-2352.87 1187.93,-2363.33"></path>
+<polygon fill="black" stroke="black" points="1186.49,-2360.13 1178.28,-2366.83 1188.87,-2366.71 1186.49,-2360.13"></polygon>
+<text text-anchor="middle" x="1282.17" y="-2281.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 09d1&#45;&gt;09d6 -->
+<g id="edge170" class="edge"><title>09d1-&gt;09d6</title>
+<path fill="none" stroke="black" d="M1201.65,-2179.12C1195.11,-2173.91 1188.95,-2167.5 1185.24,-2160 1181.34,-2152.14 1180.18,-2142.79 1180.25,-2134.15"></path>
+<polygon fill="black" stroke="black" points="1183.75,-2134.3 1180.85,-2124.11 1176.76,-2133.88 1183.75,-2134.3"></polygon>
+<text text-anchor="middle" x="1196.88" y="-2146.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 09db -->
+<g id="node124" class="node"><title>09db</title>
+<ellipse fill="none" stroke="black" cx="1290" cy="-2016" rx="69.1427" ry="18"></ellipse>
+<text text-anchor="middle" x="1290" y="-2011.8" font-family="Times,serif" font-size="14.00">Tropical Island</text>
+</g>
+<!-- 09d1&#45;&gt;09db -->
+<g id="edge166" class="edge"><title>09d1-&gt;09db</title>
+<path fill="none" stroke="black" d="M1237.88,-2178.15C1245.09,-2163.98 1255.14,-2143.06 1262,-2124 1271.56,-2097.45 1279.37,-2066.12 1284.29,-2044.25"></path>
+<polygon fill="black" stroke="black" points="1287.74,-2044.86 1286.47,-2034.34 1280.9,-2043.35 1287.74,-2044.86"></polygon>
+<text text-anchor="middle" x="1288.78" y="-2101.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 09d6&#45;&gt;09cc -->
+<g id="edge174" class="edge"><title>09d6-&gt;09cc</title>
+<path fill="none" stroke="black" d="M1147.69,-2090.44C1138.16,-2085.19 1128.62,-2078.42 1121.66,-2070 1115.56,-2062.61 1111.54,-2053.03 1108.9,-2044.05"></path>
+<polygon fill="black" stroke="black" points="1112.29,-2043.17 1106.47,-2034.32 1105.49,-2044.87 1112.29,-2043.17"></polygon>
+<text text-anchor="middle" x="1137.17" y="-2056.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 09d6&#45;&gt;09d1 -->
+<g id="edge176" class="edge"><title>09d6-&gt;09d1</title>
+<path fill="none" stroke="black" d="M1196.13,-2124.05C1199.85,-2129.64 1203.8,-2135.96 1207,-2142 1211.43,-2150.35 1215.59,-2159.79 1219.09,-2168.37"></path>
+<polygon fill="black" stroke="black" points="1215.93,-2169.9 1222.85,-2177.92 1222.44,-2167.33 1215.93,-2169.9"></polygon>
+<text text-anchor="middle" x="1228.83" y="-2146.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 09d6&#45;&gt;09db -->
+<g id="edge172" class="edge"><title>09d6-&gt;09db</title>
+<path fill="none" stroke="black" d="M1203.02,-2088.63C1215.34,-2078.09 1231.76,-2064.13 1246.45,-2052 1251.36,-2047.95 1256.61,-2043.67 1261.71,-2039.55"></path>
+<polygon fill="black" stroke="black" points="1263.93,-2042.26 1269.52,-2033.27 1259.54,-2036.81 1263.93,-2042.26"></polygon>
+<text text-anchor="middle" x="1261.78" y="-2056.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 09db&#45;&gt;09d1 -->
+<g id="edge180" class="edge"><title>09db-&gt;09d1</title>
+<path fill="none" stroke="black" d="M1298.35,-2034.06C1307.77,-2055.84 1320.15,-2094.24 1307,-2124 1298.11,-2144.11 1280.4,-2160.97 1264.1,-2173.21"></path>
+<polygon fill="black" stroke="black" points="1261.85,-2170.52 1255.76,-2179.19 1265.93,-2176.21 1261.85,-2170.52"></polygon>
+<text text-anchor="middle" x="1328.17" y="-2101.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 09e0 -->
+<g id="node131" class="node"><title>09e0</title>
+<ellipse fill="none" stroke="black" cx="1240" cy="-1926" rx="69.1427" ry="18"></ellipse>
+<text text-anchor="middle" x="1240" y="-1921.8" font-family="Times,serif" font-size="14.00">Tropical Island</text>
+</g>
+<!-- 09db&#45;&gt;09e0 -->
+<g id="edge178" class="edge"><title>09db-&gt;09e0</title>
+<path fill="none" stroke="black" d="M1257.49,-1999.89C1249.88,-1994.71 1242.75,-1988.13 1238.45,-1980 1234.34,-1972.25 1233.51,-1962.93 1234.08,-1954.28"></path>
+<polygon fill="black" stroke="black" points="1237.57,-1954.57 1235.34,-1944.21 1230.62,-1953.7 1237.57,-1954.57"></polygon>
+<text text-anchor="middle" x="1253.78" y="-1966.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 09e0&#45;&gt;09db -->
+<g id="edge184" class="edge"><title>09e0-&gt;09db</title>
+<path fill="none" stroke="black" d="M1254.97,-1943.74C1259.51,-1949.31 1264.28,-1955.7 1268,-1962 1272.81,-1970.14 1277.08,-1979.52 1280.54,-1988.11"></path>
+<polygon fill="black" stroke="black" points="1277.38,-1989.63 1284.23,-1997.71 1283.91,-1987.12 1277.38,-1989.63"></polygon>
+<text text-anchor="middle" x="1292.17" y="-1966.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 09e5 -->
+<g id="node134" class="node"><title>09e5</title>
+<ellipse fill="none" stroke="black" cx="1187" cy="-1836" rx="69.1427" ry="18"></ellipse>
+<text text-anchor="middle" x="1187" y="-1831.8" font-family="Times,serif" font-size="14.00">Tropical Island</text>
+</g>
+<!-- 09e0&#45;&gt;09e5 -->
+<g id="edge182" class="edge"><title>09e0-&gt;09e5</title>
+<path fill="none" stroke="black" d="M1207.9,-1909.99C1200.2,-1904.79 1192.92,-1898.16 1188.45,-1890 1184.24,-1882.31 1182.96,-1873 1183.02,-1864.35"></path>
+<polygon fill="black" stroke="black" points="1186.52,-1864.46 1183.64,-1854.27 1179.53,-1864.03 1186.52,-1864.46"></polygon>
+<text text-anchor="middle" x="1203.78" y="-1876.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 09e5&#45;&gt;09e0 -->
+<g id="edge188" class="edge"><title>09e5-&gt;09e0</title>
+<path fill="none" stroke="black" d="M1203.67,-1853.54C1208.7,-1859.09 1213.95,-1865.53 1218,-1872 1223.01,-1880.01 1227.33,-1889.37 1230.78,-1897.96"></path>
+<polygon fill="black" stroke="black" points="1227.61,-1899.47 1234.43,-1907.59 1234.16,-1897 1227.61,-1899.47"></polygon>
+<text text-anchor="middle" x="1242.17" y="-1876.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 09ea -->
+<g id="node137" class="node"><title>09ea</title>
+<ellipse fill="none" stroke="black" cx="1136" cy="-1746" rx="66.0072" ry="18"></ellipse>
+<text text-anchor="middle" x="1136" y="-1741.8" font-family="Times,serif" font-size="14.00">Tropical Cave</text>
+</g>
+<!-- 09e5&#45;&gt;09ea -->
+<g id="edge186" class="edge"><title>09e5-&gt;09ea</title>
+<path fill="none" stroke="black" d="M1154.49,-1819.89C1146.88,-1814.71 1139.75,-1808.13 1135.45,-1800 1131.35,-1792.25 1130.37,-1782.93 1130.77,-1774.28"></path>
+<polygon fill="black" stroke="black" points="1134.26,-1774.52 1131.81,-1764.21 1127.3,-1773.8 1134.26,-1774.52"></polygon>
+<text text-anchor="middle" x="1150.78" y="-1786.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 09ea&#45;&gt;09e5 -->
+<g id="edge192" class="edge"><title>09ea-&gt;09e5</title>
+<path fill="none" stroke="black" d="M1151.54,-1763.68C1156.24,-1769.24 1161.17,-1775.65 1165,-1782 1169.88,-1790.09 1174.17,-1799.47 1177.63,-1808.06"></path>
+<polygon fill="black" stroke="black" points="1174.46,-1809.58 1181.3,-1817.67 1181,-1807.08 1174.46,-1809.58"></polygon>
+<text text-anchor="middle" x="1189.17" y="-1786.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 09ef -->
+<g id="node140" class="node"><title>09ef</title>
+<ellipse fill="none" stroke="black" cx="1083" cy="-1656" rx="66.0072" ry="18"></ellipse>
+<text text-anchor="middle" x="1083" y="-1651.8" font-family="Times,serif" font-size="14.00">Tropical Cave</text>
+</g>
+<!-- 09ea&#45;&gt;09ef -->
+<g id="edge190" class="edge"><title>09ea-&gt;09ef</title>
+<path fill="none" stroke="black" d="M1104.17,-1730.17C1096.37,-1724.94 1088.97,-1718.26 1084.45,-1710 1080.24,-1702.31 1078.96,-1693 1079.02,-1684.35"></path>
+<polygon fill="black" stroke="black" points="1082.52,-1684.46 1079.64,-1674.27 1075.53,-1684.03 1082.52,-1684.46"></polygon>
+<text text-anchor="middle" x="1099.78" y="-1696.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 09ef&#45;&gt;09ea -->
+<g id="edge196" class="edge"><title>09ef-&gt;09ea</title>
+<path fill="none" stroke="black" d="M1099.67,-1673.54C1104.7,-1679.09 1109.95,-1685.53 1114,-1692 1119.01,-1700.01 1123.33,-1709.37 1126.78,-1717.96"></path>
+<polygon fill="black" stroke="black" points="1123.61,-1719.47 1130.43,-1727.59 1130.16,-1717 1123.61,-1719.47"></polygon>
+<text text-anchor="middle" x="1138.17" y="-1696.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 09f4 -->
+<g id="node143" class="node"><title>09f4</title>
+<ellipse fill="none" stroke="black" cx="1105" cy="-1566" rx="66.0072" ry="18"></ellipse>
+<text text-anchor="middle" x="1105" y="-1561.8" font-family="Times,serif" font-size="14.00">Tropical Cave</text>
+</g>
+<!-- 09ef&#45;&gt;09f4 -->
+<g id="edge194" class="edge"><title>09ef-&gt;09f4</title>
+<path fill="none" stroke="black" d="M1067.09,-1638.17C1059.18,-1627.69 1052.47,-1613.98 1058.45,-1602 1060.82,-1597.26 1064.16,-1592.99 1067.99,-1589.2"></path>
+<polygon fill="black" stroke="black" points="1070.49,-1591.67 1075.82,-1582.51 1065.94,-1586.35 1070.49,-1591.67"></polygon>
+<text text-anchor="middle" x="1073.78" y="-1606.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 09f4&#45;&gt;09ef -->
+<g id="edge200" class="edge"><title>09f4-&gt;09ef</title>
+<path fill="none" stroke="black" d="M1100.7,-1584.22C1097.57,-1596.74 1093.27,-1613.93 1089.69,-1628.23"></path>
+<polygon fill="black" stroke="black" points="1086.27,-1627.48 1087.24,-1638.03 1093.06,-1629.18 1086.27,-1627.48"></polygon>
+<text text-anchor="middle" x="1111.17" y="-1606.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 09fe -->
+<g id="node146" class="node"><title>09fe</title>
+<ellipse fill="none" stroke="black" cx="1050" cy="-1476" rx="66.0072" ry="18"></ellipse>
+<text text-anchor="middle" x="1050" y="-1471.8" font-family="Times,serif" font-size="14.00">Tropical Cave</text>
+</g>
+<!-- 09f4&#45;&gt;09fe -->
+<g id="edge198" class="edge"><title>09f4-&gt;09fe</title>
+<path fill="none" stroke="black" d="M1071.96,-1550.41C1063.86,-1545.18 1056.16,-1538.43 1051.45,-1530 1047.17,-1522.35 1045.88,-1513.05 1045.94,-1504.39"></path>
+<polygon fill="black" stroke="black" points="1049.44,-1504.5 1046.57,-1494.3 1042.45,-1504.06 1049.44,-1504.5"></polygon>
+<text text-anchor="middle" x="1066.78" y="-1516.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 09f9 -->
+<g id="node149" class="node"><title>09f9</title>
+<ellipse fill="none" stroke="black" cx="1230" cy="-1476" rx="95.9574" ry="18"></ellipse>
+<text text-anchor="middle" x="1230" y="-1471.8" font-family="Times,serif" font-size="14.00">Tropical Cave Alcove</text>
+</g>
+<!-- 09f4&#45;&gt;09f9 -->
+<g id="edge202" class="edge"><title>09f4-&gt;09f9</title>
+<path fill="none" stroke="black" d="M1126.98,-1548.81C1141.46,-1538.22 1160.87,-1524.15 1178.24,-1512 1184.09,-1507.91 1190.35,-1503.6 1196.43,-1499.47"></path>
+<polygon fill="black" stroke="black" points="1198.82,-1502.08 1205.14,-1493.57 1194.9,-1496.28 1198.82,-1502.08"></polygon>
+<text text-anchor="middle" x="1189.88" y="-1516.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 09fe&#45;&gt;09f4 -->
+<g id="edge206" class="edge"><title>09fe-&gt;09f4</title>
+<path fill="none" stroke="black" d="M1066.55,-1493.62C1071.57,-1499.18 1076.85,-1505.6 1081,-1512 1086.27,-1520.13 1090.96,-1529.61 1094.76,-1538.28"></path>
+<polygon fill="black" stroke="black" points="1091.58,-1539.74 1098.67,-1547.62 1098.04,-1537.04 1091.58,-1539.74"></polygon>
+<text text-anchor="middle" x="1106.17" y="-1516.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 0a3f -->
+<g id="node151" class="node"><title>0a3f</title>
+<ellipse fill="none" stroke="black" cx="1055" cy="-1368" rx="86.3788" ry="18"></ellipse>
+<text text-anchor="middle" x="1055" y="-1363.8" font-family="Times,serif" font-size="14.00">Vault Antechamber</text>
+</g>
+<!-- 09fe&#45;&gt;0a3f -->
+<g id="edge204" class="edge"><title>09fe-&gt;0a3f</title>
+<path fill="none" stroke="black" d="M1024.33,-1459.29C1017.95,-1454.01 1011.95,-1447.53 1008.45,-1440 1001.7,-1425.49 1001.3,-1418.32 1008.45,-1404 1010.65,-1399.6 1013.69,-1395.6 1017.19,-1392.02"></path>
+<polygon fill="black" stroke="black" points="1019.67,-1394.49 1024.85,-1385.25 1015.04,-1389.24 1019.67,-1394.49"></polygon>
+<text text-anchor="middle" x="1023.78" y="-1417.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 09f9&#45;&gt;09f4 -->
+<g id="edge208" class="edge"><title>09f9-&gt;09f4</title>
+<path fill="none" stroke="black" d="M1223.84,-1494.38C1218.97,-1505.89 1211.12,-1520.55 1200,-1530 1189.65,-1538.8 1176.88,-1545.47 1164.11,-1550.51"></path>
+<polygon fill="black" stroke="black" points="1162.59,-1547.34 1154.38,-1554.04 1164.98,-1553.92 1162.59,-1547.34"></polygon>
+<text text-anchor="middle" x="1227.83" y="-1516.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 0a3f&#45;&gt;09fe -->
+<g id="edge214" class="edge"><title>0a3f-&gt;09fe</title>
+<path fill="none" stroke="black" d="M1054.18,-1386.34C1053.39,-1403.04 1052.19,-1428.55 1051.28,-1447.93"></path>
+<polygon fill="black" stroke="black" points="1047.78,-1447.82 1050.8,-1457.97 1054.77,-1448.15 1047.78,-1447.82"></polygon>
+<text text-anchor="middle" x="1069.17" y="-1417.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 0a2b -->
+<g id="node155" class="node"><title>0a2b</title>
+<ellipse fill="none" stroke="black" cx="1048" cy="-738" rx="54.621" ry="18"></ellipse>
+<text text-anchor="middle" x="1048" y="-733.8" font-family="Times,serif" font-size="14.00">Vault Lock</text>
+</g>
+<!-- 0a3f&#45;&gt;0a2b -->
+<g id="edge210" class="edge"><title>0a3f-&gt;0a2b</title>
+<path fill="none" stroke="black" d="M1031.94,-1350.61C1012.56,-1334.74 988,-1308.76 988,-1279 988,-1279 988,-1279 988,-827 988,-801.664 1005.19,-778.241 1021.16,-761.94"></path>
+<polygon fill="black" stroke="black" points="1023.61,-764.444 1028.35,-754.97 1018.74,-759.418 1023.61,-764.444"></polygon>
+<text text-anchor="middle" x="1002.78" y="-1048.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 0a44 -->
+<g id="node157" class="node"><title>0a44</title>
+<ellipse fill="none" stroke="black" cx="1144" cy="-1278" rx="54.621" ry="18"></ellipse>
+<text text-anchor="middle" x="1144" y="-1273.8" font-family="Times,serif" font-size="14.00">Vault Lock</text>
+</g>
+<!-- 0a3f&#45;&gt;0a44 -->
+<g id="edge212" class="edge"><title>0a3f-&gt;0a44</title>
+<path fill="none" stroke="black" d="M1066.54,-1349.78C1074.26,-1338.9 1085.03,-1324.89 1096.24,-1314 1100.98,-1309.39 1106.35,-1304.89 1111.74,-1300.73"></path>
+<polygon fill="black" stroke="black" points="1114.18,-1303.28 1120.13,-1294.52 1110.01,-1297.66 1114.18,-1303.28"></polygon>
+<text text-anchor="middle" x="1107.88" y="-1318.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 0a2b&#45;&gt;0a3f -->
+<g id="edge220" class="edge"><title>0a2b-&gt;0a3f</title>
+<path fill="none" stroke="black" d="M1045.82,-756.167C1043.77,-773.881 1041,-802.325 1041,-827 1041,-1279 1041,-1279 1041,-1279 1041,-1299.63 1044.8,-1322.64 1048.44,-1339.95"></path>
+<polygon fill="black" stroke="black" points="1045.07,-1340.92 1050.65,-1349.93 1051.9,-1339.41 1045.07,-1340.92"></polygon>
+<text text-anchor="middle" x="1056.17" y="-1048.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 0a17 -->
+<g id="node160" class="node"><title>0a17</title>
+<ellipse fill="none" stroke="black" cx="1054" cy="-648" rx="54.621" ry="18"></ellipse>
+<text text-anchor="middle" x="1054" y="-643.8" font-family="Times,serif" font-size="14.00">Vault Lock</text>
+</g>
+<!-- 0a2b&#45;&gt;0a17 -->
+<g id="edge216" class="edge"><title>0a2b-&gt;0a17</title>
+<path fill="none" stroke="black" d="M1032.99,-720.563C1025.42,-710.233 1018.75,-696.533 1023.45,-684 1024.87,-680.2 1026.92,-676.542 1029.28,-673.117"></path>
+<polygon fill="black" stroke="black" points="1032.15,-675.133 1035.66,-665.134 1026.68,-670.765 1032.15,-675.133"></polygon>
+<text text-anchor="middle" x="1038.78" y="-688.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 0a30 -->
+<g id="node162" class="node"><title>0a30</title>
+<ellipse fill="none" stroke="black" cx="1154" cy="-828" rx="54.621" ry="18"></ellipse>
+<text text-anchor="middle" x="1154" y="-823.8" font-family="Times,serif" font-size="14.00">Vault Lock</text>
+</g>
+<!-- 0a2b&#45;&gt;0a30 -->
+<g id="edge218" class="edge"><title>0a2b-&gt;0a30</title>
+<path fill="none" stroke="black" d="M1073,-754.038C1082.1,-759.888 1092.29,-766.888 1101,-774 1111.82,-782.83 1122.88,-793.57 1132.08,-803.067"></path>
+<polygon fill="black" stroke="black" points="1129.59,-805.527 1139.02,-810.357 1134.66,-800.701 1129.59,-805.527"></polygon>
+<text text-anchor="middle" x="1131.88" y="-778.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 0a44&#45;&gt;0a3f -->
+<g id="edge226" class="edge"><title>0a44-&gt;0a3f</title>
+<path fill="none" stroke="black" d="M1138.55,-1296.36C1134.34,-1307.57 1127.6,-1321.9 1118,-1332 1112.9,-1337.36 1106.8,-1342.12 1100.43,-1346.25"></path>
+<polygon fill="black" stroke="black" points="1098.42,-1343.38 1091.64,-1351.52 1102.02,-1349.38 1098.42,-1343.38"></polygon>
+<text text-anchor="middle" x="1143.83" y="-1318.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 0a44&#45;&gt;0a30 -->
+<g id="edge222" class="edge"><title>0a44-&gt;0a30</title>
+<path fill="none" stroke="black" d="M1127.9,-1260.71C1113.29,-1244.12 1094,-1216.94 1094,-1189 1094,-1189 1094,-1189 1094,-917 1094,-891.664 1111.19,-868.241 1127.16,-851.94"></path>
+<polygon fill="black" stroke="black" points="1129.61,-854.444 1134.35,-844.97 1124.74,-849.418 1129.61,-854.444"></polygon>
+<text text-anchor="middle" x="1108.78" y="-1048.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 0a49 -->
+<g id="node166" class="node"><title>0a49</title>
+<ellipse fill="none" stroke="black" cx="1250" cy="-1188" rx="54.621" ry="18"></ellipse>
+<text text-anchor="middle" x="1250" y="-1183.8" font-family="Times,serif" font-size="14.00">Vault Lock</text>
+</g>
+<!-- 0a44&#45;&gt;0a49 -->
+<g id="edge224" class="edge"><title>0a44-&gt;0a49</title>
+<path fill="none" stroke="black" d="M1160.9,-1260.74C1172.31,-1249.99 1187.84,-1235.77 1202.24,-1224 1207.69,-1219.54 1213.65,-1214.96 1219.45,-1210.64"></path>
+<polygon fill="black" stroke="black" points="1221.76,-1213.29 1227.75,-1204.55 1217.62,-1207.64 1221.76,-1213.29"></polygon>
+<text text-anchor="middle" x="1213.88" y="-1228.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 0a17&#45;&gt;0a2b -->
+<g id="edge232" class="edge"><title>0a17-&gt;0a2b</title>
+<path fill="none" stroke="black" d="M1054.21,-666.212C1054.2,-676.594 1053.96,-690.075 1053,-702 1052.79,-704.57 1052.52,-707.238 1052.21,-709.904"></path>
+<polygon fill="black" stroke="black" points="1048.72,-709.582 1050.86,-719.957 1055.66,-710.509 1048.72,-709.582"></polygon>
+<text text-anchor="middle" x="1069.17" y="-688.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 0a03 -->
+<g id="node169" class="node"><title>0a03</title>
+<ellipse fill="none" stroke="black" cx="1060" cy="-18" rx="54.621" ry="18"></ellipse>
+<text text-anchor="middle" x="1060" y="-13.8" font-family="Times,serif" font-size="14.00">Vault Lock</text>
+</g>
+<!-- 0a17&#45;&gt;0a03 -->
+<g id="edge228" class="edge"><title>0a17-&gt;0a03</title>
+<path fill="none" stroke="black" d="M1032.39,-631.451C1013.14,-615.623 988,-589.174 988,-559 988,-559 988,-559 988,-107 988,-79.8824 1008.73,-56.5279 1027.95,-40.7066"></path>
+<polygon fill="black" stroke="black" points="1030.3,-43.312 1036.03,-34.3983 1025.99,-37.7952 1030.3,-43.312"></polygon>
+<text text-anchor="middle" x="1002.78" y="-328.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 0a1c -->
+<g id="node171" class="node"><title>0a1c</title>
+<ellipse fill="none" stroke="black" cx="1154" cy="-558" rx="54.621" ry="18"></ellipse>
+<text text-anchor="middle" x="1154" y="-553.8" font-family="Times,serif" font-size="14.00">Vault Lock</text>
+</g>
+<!-- 0a17&#45;&gt;0a1c -->
+<g id="edge230" class="edge"><title>0a17-&gt;0a1c</title>
+<path fill="none" stroke="black" d="M1057.33,-629.878C1060.31,-618.482 1065.74,-603.85 1075.24,-594 1083.27,-585.666 1093.63,-579.173 1104.19,-574.169"></path>
+<polygon fill="black" stroke="black" points="1105.69,-577.337 1113.47,-570.147 1102.9,-570.915 1105.69,-577.337"></polygon>
+<text text-anchor="middle" x="1086.88" y="-598.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 0a30&#45;&gt;0a2b -->
+<g id="edge240" class="edge"><title>0a30-&gt;0a2b</title>
+<path fill="none" stroke="black" d="M1112.12,-816.197C1097.78,-810.828 1082.55,-803.049 1071.34,-792 1064.09,-784.847 1058.92,-775.051 1055.32,-765.826"></path>
+<polygon fill="black" stroke="black" points="1058.57,-764.512 1052.01,-756.192 1051.95,-766.787 1058.57,-764.512"></polygon>
+<text text-anchor="middle" x="1084.83" y="-778.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 0a30&#45;&gt;0a44 -->
+<g id="edge238" class="edge"><title>0a30-&gt;0a44</title>
+<path fill="none" stroke="black" d="M1151.82,-846.167C1149.77,-863.881 1147,-892.325 1147,-917 1147,-1189 1147,-1189 1147,-1189 1147,-1209.38 1146.19,-1232.4 1145.41,-1249.79"></path>
+<polygon fill="black" stroke="black" points="1141.91,-1249.65 1144.93,-1259.81 1148.9,-1249.98 1141.91,-1249.65"></polygon>
+<text text-anchor="middle" x="1162.17" y="-1048.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 0a30&#45;&gt;0a1c -->
+<g id="edge234" class="edge"><title>0a30-&gt;0a1c</title>
+<path fill="none" stroke="black" d="M1154,-809.828C1154,-764.447 1154,-641.059 1154,-586.071"></path>
+<polygon fill="black" stroke="black" points="1157.5,-586.029 1154,-576.029 1150.5,-586.029 1157.5,-586.029"></polygon>
+<text text-anchor="middle" x="1168.78" y="-688.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 0a35 -->
+<g id="node175" class="node"><title>0a35</title>
+<ellipse fill="none" stroke="black" cx="1259" cy="-918" rx="54.621" ry="18"></ellipse>
+<text text-anchor="middle" x="1259" y="-913.8" font-family="Times,serif" font-size="14.00">Vault Lock</text>
+</g>
+<!-- 0a30&#45;&gt;0a35 -->
+<g id="edge236" class="edge"><title>0a30-&gt;0a35</title>
+<path fill="none" stroke="black" d="M1179.04,-843.993C1188.14,-849.838 1198.32,-856.847 1207,-864 1217.57,-872.711 1228.32,-883.32 1237.29,-892.752"></path>
+<polygon fill="black" stroke="black" points="1234.97,-895.403 1244.35,-900.331 1240.09,-890.63 1234.97,-895.403"></polygon>
+<text text-anchor="middle" x="1237.88" y="-868.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 0a49&#45;&gt;0a44 -->
+<g id="edge246" class="edge"><title>0a49-&gt;0a44</title>
+<path fill="none" stroke="black" d="M1245.03,-1206.17C1240.97,-1217.58 1234.22,-1232.22 1224,-1242 1215.45,-1250.19 1204.66,-1256.64 1193.81,-1261.65"></path>
+<polygon fill="black" stroke="black" points="1192.14,-1258.56 1184.3,-1265.69 1194.88,-1265 1192.14,-1258.56"></polygon>
+<text text-anchor="middle" x="1249.83" y="-1228.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 0a49&#45;&gt;0a35 -->
+<g id="edge242" class="edge"><title>0a49-&gt;0a35</title>
+<path fill="none" stroke="black" d="M1238.11,-1170.22C1220.89,-1143.9 1192.03,-1091.05 1201.45,-1044 1208.77,-1007.44 1228.55,-969.002 1242.88,-944.561"></path>
+<polygon fill="black" stroke="black" points="1245.93,-946.289 1248.07,-935.913 1239.93,-942.688 1245.93,-946.289"></polygon>
+<text text-anchor="middle" x="1216.78" y="-1048.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 0a4e -->
+<g id="node180" class="node"><title>0a4e</title>
+<ellipse fill="none" stroke="black" cx="1336" cy="-1098" rx="54.621" ry="18"></ellipse>
+<text text-anchor="middle" x="1336" y="-1093.8" font-family="Times,serif" font-size="14.00">Vault Lock</text>
+</g>
+<!-- 0a49&#45;&gt;0a4e -->
+<g id="edge244" class="edge"><title>0a49-&gt;0a4e</title>
+<path fill="none" stroke="black" d="M1260.92,-1170.32C1268.48,-1159.39 1279.15,-1145.13 1290.24,-1134 1294.78,-1129.44 1299.92,-1124.97 1305.09,-1120.82"></path>
+<polygon fill="black" stroke="black" points="1307.35,-1123.49 1313.13,-1114.6 1303.07,-1117.95 1307.35,-1123.49"></polygon>
+<text text-anchor="middle" x="1301.88" y="-1138.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 0a03&#45;&gt;0a17 -->
+<g id="edge250" class="edge"><title>0a03-&gt;0a17</title>
+<path fill="none" stroke="black" d="M1054.09,-35.9653C1048.51,-53.5176 1041,-81.836 1041,-107 1041,-559 1041,-559 1041,-559 1041,-579.591 1044.53,-602.603 1047.91,-619.93"></path>
+<polygon fill="black" stroke="black" points="1044.52,-620.821 1049.96,-629.911 1051.37,-619.411 1044.52,-620.821"></polygon>
+<text text-anchor="middle" x="1056.17" y="-328.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 0a08 -->
+<g id="node183" class="node"><title>0a08</title>
+<ellipse fill="none" stroke="black" cx="1135" cy="-108" rx="54.621" ry="18"></ellipse>
+<text text-anchor="middle" x="1135" y="-103.8" font-family="Times,serif" font-size="14.00">Vault Lock</text>
+</g>
+<!-- 0a03&#45;&gt;0a08 -->
+<g id="edge248" class="edge"><title>0a03-&gt;0a08</title>
+<path fill="none" stroke="black" d="M1085.89,-33.9556C1094,-39.5099 1102.51,-46.3454 1109,-54 1115.62,-61.8072 1121.03,-71.5895 1125.17,-80.6177"></path>
+<polygon fill="black" stroke="black" points="1122.02,-82.1582 1129.16,-89.9889 1128.46,-79.4169 1122.02,-82.1582"></polygon>
+<text text-anchor="middle" x="1131.88" y="-58.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 0a1c&#45;&gt;0a17 -->
+<g id="edge258" class="edge"><title>0a1c-&gt;0a17</title>
+<path fill="none" stroke="black" d="M1137.06,-575.302C1125.86,-585.941 1110.76,-600.025 1097,-612 1092.14,-616.23 1086.88,-620.64 1081.76,-624.848"></path>
+<polygon fill="black" stroke="black" points="1079.46,-622.209 1073.92,-631.238 1083.88,-627.636 1079.46,-622.209"></polygon>
+<text text-anchor="middle" x="1129.83" y="-598.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 0a1c&#45;&gt;0a30 -->
+<g id="edge256" class="edge"><title>0a1c-&gt;0a30</title>
+<path fill="none" stroke="black" d="M1161.43,-575.88C1163.75,-581.562 1166.18,-587.987 1168,-594 1179.86,-633.124 1182.75,-643.339 1187,-684 1191.31,-725.302 1176.76,-771.976 1165.61,-800.441"></path>
+<polygon fill="black" stroke="black" points="1162.22,-799.479 1161.7,-810.06 1168.71,-802.115 1162.22,-799.479"></polygon>
+<text text-anchor="middle" x="1203.17" y="-688.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 0a1c&#45;&gt;0a08 -->
+<g id="edge252" class="edge"><title>0a1c-&gt;0a08</title>
+<path fill="none" stroke="black" d="M1134.35,-541.03C1116.86,-524.889 1094,-498.216 1094,-469 1094,-469 1094,-469 1094,-197 1094,-174.389 1105.26,-151.309 1115.98,-134.462"></path>
+<polygon fill="black" stroke="black" points="1119.13,-136.039 1121.8,-125.786 1113.32,-132.138 1119.13,-136.039"></polygon>
+<text text-anchor="middle" x="1108.78" y="-328.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 0a21 -->
+<g id="node187" class="node"><title>0a21</title>
+<ellipse fill="none" stroke="black" cx="1260" cy="-468" rx="54.621" ry="18"></ellipse>
+<text text-anchor="middle" x="1260" y="-463.8" font-family="Times,serif" font-size="14.00">Vault Lock</text>
+</g>
+<!-- 0a1c&#45;&gt;0a21 -->
+<g id="edge254" class="edge"><title>0a1c-&gt;0a21</title>
+<path fill="none" stroke="black" d="M1159.41,-539.849C1163.76,-528.441 1170.86,-513.806 1181.24,-504 1189.73,-495.971 1200.38,-489.584 1211.07,-484.583"></path>
+<polygon fill="black" stroke="black" points="1212.63,-487.72 1220.42,-480.539 1209.85,-481.294 1212.63,-487.72"></polygon>
+<text text-anchor="middle" x="1192.88" y="-508.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 0a35&#45;&gt;0a30 -->
+<g id="edge266" class="edge"><title>0a35-&gt;0a30</title>
+<path fill="none" stroke="black" d="M1217.62,-906.099C1203.46,-900.72 1188.41,-892.96 1177.34,-882 1170.1,-874.831 1164.94,-865.032 1161.34,-855.809"></path>
+<polygon fill="black" stroke="black" points="1164.59,-854.495 1158.02,-846.179 1157.97,-856.773 1164.59,-854.495"></polygon>
+<text text-anchor="middle" x="1190.83" y="-868.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 0a35&#45;&gt;0a49 -->
+<g id="edge264" class="edge"><title>0a35-&gt;0a49</title>
+<path fill="none" stroke="black" d="M1258.43,-936.029C1256.91,-981.246 1252.77,-1104.62 1250.91,-1159.75"></path>
+<polygon fill="black" stroke="black" points="1247.41,-1159.72 1250.58,-1169.83 1254.41,-1159.95 1247.41,-1159.72"></polygon>
+<text text-anchor="middle" x="1270.17" y="-1048.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 0a35&#45;&gt;0a21 -->
+<g id="edge260" class="edge"><title>0a35-&gt;0a21</title>
+<path fill="none" stroke="black" d="M1261.18,-899.833C1263.23,-882.119 1266,-853.675 1266,-829 1266,-829 1266,-829 1266,-557 1266,-536.583 1264.37,-513.563 1262.81,-496.19"></path>
+<polygon fill="black" stroke="black" points="1266.29,-495.802 1261.87,-486.176 1259.32,-496.461 1266.29,-495.802"></polygon>
+<text text-anchor="middle" x="1280.78" y="-688.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 0a3a -->
+<g id="node192" class="node"><title>0a3a</title>
+<ellipse fill="none" stroke="black" cx="1354" cy="-1008" rx="54.621" ry="18"></ellipse>
+<text text-anchor="middle" x="1354" y="-1003.8" font-family="Times,serif" font-size="14.00">Vault Lock</text>
+</g>
+<!-- 0a35&#45;&gt;0a3a -->
+<g id="edge262" class="edge"><title>0a35-&gt;0a3a</title>
+<path fill="none" stroke="black" d="M1285.56,-933.724C1294.74,-939.441 1304.78,-946.436 1313,-954 1321.91,-962.201 1330.36,-972.499 1337.24,-981.831"></path>
+<polygon fill="black" stroke="black" points="1334.44,-983.929 1343.09,-990.042 1340.14,-979.867 1334.44,-983.929"></polygon>
+<text text-anchor="middle" x="1339.88" y="-958.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 0a4e&#45;&gt;0a49 -->
+<g id="edge270" class="edge"><title>0a4e-&gt;0a49</title>
+<path fill="none" stroke="black" d="M1331.24,-1116.34C1327.47,-1127.54 1321.27,-1141.87 1312,-1152 1306.18,-1158.36 1298.94,-1163.85 1291.47,-1168.47"></path>
+<polygon fill="black" stroke="black" points="1289.62,-1165.5 1282.67,-1173.5 1293.09,-1171.58 1289.62,-1165.5"></polygon>
+<text text-anchor="middle" x="1336.83" y="-1138.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 0a4e&#45;&gt;0a3a -->
+<g id="edge268" class="edge"><title>0a4e-&gt;0a3a</title>
+<path fill="none" stroke="black" d="M1326.38,-1079.98C1321.7,-1069.43 1317.95,-1055.7 1322.45,-1044 1323.92,-1040.16 1326.04,-1036.47 1328.48,-1033.03"></path>
+<polygon fill="black" stroke="black" points="1331.41,-1034.98 1335.07,-1025.04 1326.01,-1030.53 1331.41,-1034.98"></polygon>
+<text text-anchor="middle" x="1337.78" y="-1048.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 0a08&#45;&gt;0a03 -->
+<g id="edge276" class="edge"><title>0a08-&gt;0a03</title>
+<path fill="none" stroke="black" d="M1104.74,-92.8897C1095.58,-87.4281 1086.16,-80.4338 1079.34,-72 1073.26,-64.4722 1068.99,-54.8594 1066.04,-45.8927"></path>
+<polygon fill="black" stroke="black" points="1069.38,-44.8297 1063.25,-36.1892 1062.65,-46.7673 1069.38,-44.8297"></polygon>
+<text text-anchor="middle" x="1092.83" y="-58.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 0a08&#45;&gt;0a1c -->
+<g id="edge274" class="edge"><title>0a08-&gt;0a1c</title>
+<path fill="none" stroke="black" d="M1138.73,-126.105C1142.25,-143.769 1147,-172.175 1147,-197 1147,-469 1147,-469 1147,-469 1147,-489.434 1148.9,-512.453 1150.72,-529.822"></path>
+<polygon fill="black" stroke="black" points="1147.25,-530.277 1151.82,-539.833 1154.21,-529.509 1147.25,-530.277"></polygon>
+<text text-anchor="middle" x="1162.17" y="-328.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 0a0d -->
+<g id="node198" class="node"><title>0a0d</title>
+<ellipse fill="none" stroke="black" cx="1241" cy="-198" rx="54.621" ry="18"></ellipse>
+<text text-anchor="middle" x="1241" y="-193.8" font-family="Times,serif" font-size="14.00">Vault Lock</text>
+</g>
+<!-- 0a08&#45;&gt;0a0d -->
+<g id="edge272" class="edge"><title>0a08-&gt;0a0d</title>
+<path fill="none" stroke="black" d="M1175.3,-120.311C1189.15,-125.731 1203.94,-133.412 1215,-144 1222.58,-151.259 1228.26,-161.193 1232.34,-170.5"></path>
+<polygon fill="black" stroke="black" points="1229.1,-171.82 1236.03,-179.833 1235.61,-169.247 1229.1,-171.82"></polygon>
+<text text-anchor="middle" x="1238.88" y="-148.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 0a21&#45;&gt;0a1c -->
+<g id="edge284" class="edge"><title>0a21-&gt;0a1c</title>
+<path fill="none" stroke="black" d="M1243.55,-485.358C1232.43,-496.147 1217.24,-510.378 1203,-522 1197.45,-526.531 1191.36,-531.144 1185.42,-535.471"></path>
+<polygon fill="black" stroke="black" points="1182.99,-532.9 1176.89,-541.562 1187.07,-538.595 1182.99,-532.9"></polygon>
+<text text-anchor="middle" x="1235.83" y="-508.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 0a21&#45;&gt;0a35 -->
+<g id="edge282" class="edge"><title>0a21-&gt;0a35</title>
+<path fill="none" stroke="black" d="M1279.32,-485.038C1296.53,-501.228 1319,-527.938 1319,-557 1319,-829 1319,-829 1319,-829 1319,-854.336 1301.81,-877.759 1285.84,-894.06"></path>
+<polygon fill="black" stroke="black" points="1283.39,-891.556 1278.65,-901.03 1288.26,-896.582 1283.39,-891.556"></polygon>
+<text text-anchor="middle" x="1334.17" y="-688.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 0a21&#45;&gt;0a0d -->
+<g id="edge278" class="edge"><title>0a21-&gt;0a0d</title>
+<path fill="none" stroke="black" d="M1248.85,-450.124C1234.3,-426.929 1209.73,-383.356 1201.45,-342 1193.13,-300.474 1211.81,-253.303 1226.24,-224.867"></path>
+<polygon fill="black" stroke="black" points="1229.36,-226.456 1230.93,-215.977 1223.17,-223.192 1229.36,-226.456"></polygon>
+<text text-anchor="middle" x="1216.78" y="-328.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 0a26 -->
+<g id="node203" class="node"><title>0a26</title>
+<ellipse fill="none" stroke="black" cx="1354" cy="-378" rx="54.621" ry="18"></ellipse>
+<text text-anchor="middle" x="1354" y="-373.8" font-family="Times,serif" font-size="14.00">Vault Lock</text>
+</g>
+<!-- 0a21&#45;&gt;0a26 -->
+<g id="edge280" class="edge"><title>0a21-&gt;0a26</title>
+<path fill="none" stroke="black" d="M1265.62,-450.06C1270.05,-438.745 1277.18,-424.136 1287.24,-414 1293.87,-407.313 1302.05,-401.619 1310.38,-396.89"></path>
+<polygon fill="black" stroke="black" points="1312.2,-399.888 1319.42,-392.134 1308.94,-393.694 1312.2,-399.888"></polygon>
+<text text-anchor="middle" x="1298.88" y="-418.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 0a3a&#45;&gt;0a35 -->
+<g id="edge290" class="edge"><title>0a3a-&gt;0a35</title>
+<path fill="none" stroke="black" d="M1317.52,-994.625C1305.49,-989.16 1292.78,-981.723 1283.34,-972 1276.19,-964.638 1270.89,-954.799 1267.09,-945.598"></path>
+<polygon fill="black" stroke="black" points="1270.3,-944.175 1263.54,-936.011 1263.73,-946.604 1270.3,-944.175"></polygon>
+<text text-anchor="middle" x="1296.83" y="-958.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 0a3a&#45;&gt;0a4e -->
+<g id="edge288" class="edge"><title>0a3a-&gt;0a4e</title>
+<path fill="none" stroke="black" d="M1355.03,-1026.42C1355.24,-1036.87 1354.77,-1050.35 1352,-1062 1351.32,-1064.86 1350.4,-1067.78 1349.34,-1070.64"></path>
+<polygon fill="black" stroke="black" points="1346.04,-1069.46 1345.37,-1080.03 1352.49,-1072.19 1346.04,-1069.46"></polygon>
+<text text-anchor="middle" x="1369.17" y="-1048.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 0a3a&#45;&gt;0a26 -->
+<g id="edge286" class="edge"><title>0a3a-&gt;0a26</title>
+<path fill="none" stroke="black" d="M1359.6,-990.011C1364.88,-972.44 1372,-944.107 1372,-919 1372,-919 1372,-919 1372,-467 1372,-446.209 1367.12,-423.204 1362.44,-405.932"></path>
+<polygon fill="black" stroke="black" points="1365.71,-404.642 1359.6,-395.989 1358.98,-406.566 1365.71,-404.642"></polygon>
+<text text-anchor="middle" x="1386.78" y="-688.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 0a0d&#45;&gt;0a08 -->
+<g id="edge296" class="edge"><title>0a0d-&gt;0a08</title>
+<path fill="none" stroke="black" d="M1214.59,-182.25C1205.02,-176.432 1194.35,-169.377 1185.34,-162 1174.91,-153.456 1164.47,-142.875 1155.82,-133.419"></path>
+<polygon fill="black" stroke="black" points="1158.29,-130.931 1149.01,-125.81 1153.07,-135.597 1158.29,-130.931"></polygon>
+<text text-anchor="middle" x="1198.83" y="-148.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 0a0d&#45;&gt;0a21 -->
+<g id="edge294" class="edge"><title>0a0d-&gt;0a21</title>
+<path fill="none" stroke="black" d="M1242.21,-216.029C1245.41,-261.246 1254.16,-384.624 1258.07,-439.755"></path>
+<polygon fill="black" stroke="black" points="1254.58,-440.1 1258.78,-449.828 1261.57,-439.605 1254.58,-440.1"></polygon>
+<text text-anchor="middle" x="1266.17" y="-328.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 0a12 -->
+<g id="node210" class="node"><title>0a12</title>
+<ellipse fill="none" stroke="black" cx="1361" cy="-288" rx="54.621" ry="18"></ellipse>
+<text text-anchor="middle" x="1361" y="-283.8" font-family="Times,serif" font-size="14.00">Vault Door</text>
+</g>
+<!-- 0a0d&#45;&gt;0a12 -->
+<g id="edge292" class="edge"><title>0a0d-&gt;0a12</title>
+<path fill="none" stroke="black" d="M1274.78,-212.19C1287.39,-217.922 1301.44,-225.325 1313,-234 1323.71,-242.032 1333.91,-252.699 1342.13,-262.357"></path>
+<polygon fill="black" stroke="black" points="1339.49,-264.651 1348.54,-270.152 1344.89,-260.205 1339.49,-264.651"></polygon>
+<text text-anchor="middle" x="1341.88" y="-238.8" font-family="Times,serif" font-size="14.00">east</text>
+</g>
+<!-- 0a26&#45;&gt;0a21 -->
+<g id="edge302" class="edge"><title>0a26-&gt;0a21</title>
+<path fill="none" stroke="black" d="M1341.57,-395.694C1333.03,-406.624 1321.08,-420.888 1309,-432 1303.83,-436.755 1298,-441.424 1292.21,-445.726"></path>
+<polygon fill="black" stroke="black" points="1289.92,-443.059 1283.84,-451.733 1294,-448.746 1289.92,-443.059"></polygon>
+<text text-anchor="middle" x="1339.83" y="-418.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 0a26&#45;&gt;0a3a -->
+<g id="edge300" class="edge"><title>0a26-&gt;0a3a</title>
+<path fill="none" stroke="black" d="M1377.64,-394.475C1398.3,-410.065 1425,-436.18 1425,-467 1425,-919 1425,-919 1425,-919 1425,-945.967 1404.55,-969.333 1385.61,-985.197"></path>
+<polygon fill="black" stroke="black" points="1383.29,-982.564 1377.64,-991.525 1387.65,-988.044 1383.29,-982.564"></polygon>
+<text text-anchor="middle" x="1440.17" y="-688.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 0a26&#45;&gt;0a12 -->
+<g id="edge298" class="edge"><title>0a26-&gt;0a12</title>
+<path fill="none" stroke="black" d="M1346.21,-359.755C1342.52,-349.363 1339.49,-335.881 1342.45,-324 1343.2,-320.961 1344.28,-317.896 1345.53,-314.911"></path>
+<polygon fill="black" stroke="black" points="1348.75,-316.294 1349.99,-305.772 1342.46,-313.226 1348.75,-316.294"></polygon>
+<text text-anchor="middle" x="1356.78" y="-328.8" font-family="Times,serif" font-size="14.00">north</text>
+</g>
+<!-- 0a12&#45;&gt;0a0d -->
+<g id="edge306" class="edge"><title>0a12-&gt;0a0d</title>
+<path fill="none" stroke="black" d="M1324.23,-274.61C1310.59,-268.975 1295.49,-261.43 1283.34,-252 1273.51,-244.37 1264.59,-234.01 1257.49,-224.474"></path>
+<polygon fill="black" stroke="black" points="1260.15,-222.18 1251.51,-216.049 1254.44,-226.23 1260.15,-222.18"></polygon>
+<text text-anchor="middle" x="1296.83" y="-238.8" font-family="Times,serif" font-size="14.00">west</text>
+</g>
+<!-- 0a12&#45;&gt;0a26 -->
+<g id="edge304" class="edge"><title>0a12-&gt;0a26</title>
+<path fill="none" stroke="black" d="M1368.46,-306.25C1371.99,-316.644 1374.87,-330.126 1372,-342 1371.27,-345.024 1370.23,-348.079 1369.01,-351.059"></path>
+<polygon fill="black" stroke="black" points="1365.8,-349.655 1364.69,-360.191 1372.13,-352.651 1365.8,-349.655"></polygon>
+<text text-anchor="middle" x="1388.17" y="-328.8" font-family="Times,serif" font-size="14.00">south</text>
+</g>
+<!-- 0a53 -->
+<g id="node219" class="node"><title>0a53</title>
+<ellipse fill="none" stroke="black" cx="1405" cy="-198" rx="32.2356" ry="18"></ellipse>
+<text text-anchor="middle" x="1405" y="-193.8" font-family="Times,serif" font-size="14.00">Vault</text>
+</g>
+<!-- 0a12&#45;&gt;0a53 -->
+<g id="edge308" class="edge"><title>0a12-&gt;0a53</title>
+<path fill="none" stroke="black" d="M1366.31,-269.843C1369.87,-259.241 1375,-245.509 1381,-234 1382.87,-230.428 1385.03,-226.785 1387.28,-223.264"></path>
+<polygon fill="black" stroke="black" points="1390.25,-225.125 1392.92,-214.874 1384.44,-221.217 1390.25,-225.125"></polygon>
+<text text-anchor="middle" x="1395" y="-238.8" font-family="Times,serif" font-size="14.00">vault</text>
+</g>
+<!-- 0a53&#45;&gt;0a12 -->
+<g id="edge310" class="edge"><title>0a53-&gt;0a12</title>
+<path fill="none" stroke="black" d="M1410.68,-216.128C1413.25,-226.973 1414.6,-240.978 1409,-252 1406.28,-257.359 1402.3,-262.093 1397.79,-266.208"></path>
+<polygon fill="black" stroke="black" points="1395.46,-263.586 1389.82,-272.55 1399.82,-269.065 1395.46,-263.586"></polygon>
+<text text-anchor="middle" x="1426.77" y="-238.8" font-family="Times,serif" font-size="14.00">leave</text>
+</g>
+</g>
+</svg>
