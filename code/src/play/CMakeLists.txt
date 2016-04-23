@@ -10,4 +10,4 @@ add_executable(synacor ${SOURCE_FILES})
 
 target_link_libraries(synacor ${READLINE_LIBRARIES} ${LIBZMQ_LIBRARIES})
 
-exec_program(codesign ARGS -f -s synacor synacor --deep)
+execute_process(COMMAND codesign -f -s synacor synacor --deep)

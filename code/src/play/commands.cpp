@@ -73,7 +73,7 @@ namespace paiv {
 
     static const char* commands[] = { "save", "load", "restore", "restart", "reset",
       "di", "dis", "disassemble", "reg", "regs", "registers", "s", "si", "step", "c", "cont",
-      "b", "break", "clear", "fin", "finish", "m", "mem", "memory", "stack" };
+      "b", "break", "clear", "fin", "finish", "m", "mem", "memory", "stack", "write" };
 
     if (name == "q" || name == "quit" || name == "exit")
     {
@@ -292,14 +292,32 @@ namespace paiv {
     }
     else if (name == "m" || name == "mem" || name == "memory")
     {
-      Debugger dbg(context, vm.get());
       if (command.args.size() > 0)
       {
+        Debugger dbg(context, vm.get());
         u16 address = stoul(command.args[0], 0, 16);
         u16 size = 16;
         if (command.args.size() > 1)
           size = stoul(command.args[1], 0, 16);
         dbg.dumpMemory(cout, address, size);
+      }
+    }
+    else if (name == "write")
+    {
+      if (command.args.size() > 1)
+      {
+        Debugger dbg(context, vm.get());
+        u16 value = stoul(command.args[1], 0, 16);
+        if (command.args[0][0] == 'r')
+        {
+          u16 r = stoul(&command.args[0][1], 0, 16);
+          dbg.setRegister(r, value);
+        }
+        else
+        {
+          u16 address = stoul(command.args[0], 0, 16);
+          dbg.writeMemory(address, value);
+        }
       }
     }
     else if (name == "stack")

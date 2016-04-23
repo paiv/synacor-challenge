@@ -23,6 +23,9 @@ namespace paiv
     void listBreakpoints();
     void clearBreakpoint(u16 address);
 
+    void writeMemory(u16 address, u16 value);
+    void setRegister(u16 r, u16 value);
+
   private:
     zmq::context_t* context;
     SynacorVM* vm;
@@ -174,6 +177,18 @@ namespace paiv
   Debugger::clearBreakpoint(u16 address)
   {
     sendCommand("clear breakpoint", address);
+  }
+
+  void
+  Debugger::writeMemory(u16 address, u16 value)
+  {
+    vm->mem[address] = value;
+  }
+
+  void
+  Debugger::setRegister(u16 r, u16 value)
+  {
+    vm->reg[r] = value;
   }
 
 }
