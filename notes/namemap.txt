@@ -1,0 +1,16 @@
+05B2  print secure string
+05FB  xor and out
+0623  find (str, char)
+06E7  getstring
+084D  xor
+0A6B  mapping object - location
+0B86  dispatch command
+0CAD  south
+0E8E  passage pointer ?
+0E8F  (0E8E OR-ed with r0)
+0EDE  passage with oil can
+1545  teleport function
+154B  teleport energy level
+178B  (ackermann) teleport security check
+6AF5  objects (16)
+6AF6  objects (16)
