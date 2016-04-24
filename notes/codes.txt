@@ -1,0 +1,8 @@
+0: spec
+1: running vm
+2: self test
+3: tablet
+4: oil can
+5: teleport
+6: teleport
+7: mirror
