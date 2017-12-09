@@ -76,11 +76,16 @@ namespace paiv
 
     for (size_t i = 0; i < snapshot.reg.size(); i++)
       so << setw(3) << right << 'r' << i << ' ';
+    so << "  ip   sp";
     so << endl;
 
     so << setfill('0');
     for (auto& r : snapshot.reg)
       so << hex << setw(4) << r << ' ';
+      
+    so << hex << setw(4) << snapshot.ip << ' ';
+    so << hex << setw(4) << snapshot.sp << ' ';
+    
     so << endl;
   }
 

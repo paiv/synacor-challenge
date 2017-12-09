@@ -25,11 +25,17 @@ using namespace std;
 
 using namespace paiv;
 
-#include "challenge.cpp"
+// #include "challenge.cpp"
 
 
 int main(int argc, char* argv[])
 {
+  if (argc < 2)
+  {
+    cout << "usage: play <image>" << endl;
+    return 0;
+  }
+
   // parent process -> zmq -> child process [command handler]
   // child [command handler] -> vm worker thread
 
@@ -91,7 +97,9 @@ int main(int argc, char* argv[])
     zmq::socket_t socket(context, ZMQ_REP);
     socket.bind("tcp://*:7199");
 
-    vector<u8> image(begin(challenge_bin), end(challenge_bin));
+    ImageLoader loader;
+    auto image = loader.read(argv[1]);
+    // vector<u8> image(begin(challenge_bin), end(challenge_bin));
 
     CommandHandler handler(&context, &socket, fdparent, image);
     handler.run();

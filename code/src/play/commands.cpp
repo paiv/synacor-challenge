@@ -125,7 +125,7 @@ namespace paiv {
   class CommandHandler
   {
   public:
-    CommandHandler(zmq::context_t* context, zmq::socket_t* socket, int pty, const vector<u8>& image)
+    CommandHandler(zmq::context_t* context, zmq::socket_t* socket, int pty, const vector<u16>& image)
       : context(context), socket(socket), pty(pty), worker(0), baseImage(image)
     {
     }
@@ -142,7 +142,7 @@ namespace paiv {
     zmq::socket_t* socket;
     unique_ptr<zmq::socket_t> debugEvents;
     int pty;
-    const vector<u8>& baseImage;
+    const vector<u16>& baseImage;
     pthread_t worker;
   };
 
@@ -184,8 +184,7 @@ namespace paiv {
     }
     else
     {
-      ImageLoader loader;
-      snapshot.loadImage(loader.read(baseImage));
+      snapshot.loadImage(baseImage);
     }
 
     vm->load(snapshot);
