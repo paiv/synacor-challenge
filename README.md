@@ -1,7 +1,8 @@
 Solving Synacor Challenge
 =========================
 
-[![standwithukraine](https://user-images.githubusercontent.com/196601/157244482-73d3c54c-3e3f-4fac-8eb0-cc32cd5d746e.svg)](https://ukrainewar.carrd.co/)
+[![standwithukraine](https://user-images.githubusercontent.com/196601/227769680-4b06bc9a-0196-4b6d-86e8-901987f4285a.svg)](https://ukrainewar.carrd.co/)
+
 
 The game: https://challenge.synacor.com/
 
